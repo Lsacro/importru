@@ -9,7 +9,7 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 /* Globales */
@@ -42,7 +42,7 @@ a {
 
 .contenedor {
   max-width: 120rem;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 img {
@@ -104,11 +104,18 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding-bottom: 4rem;
 }
 
 .categorias {
-  padding-top: 5rem;
+  padding-top: 5rem 0;
+}
+
+.categoria {
+  margin-bottom: 2rem;
+}
+
+.categoria img {
+  width: 100%;
 }
 
 .categoria a {
@@ -127,7 +134,7 @@ img {
 
 .sobre-nosotros {
   background-image: linear-gradient( to right, transparent 50%, #305e79 50%, #305e79 100% ), url(../img/nosotros.jpg);
-  padding: 10rem 0;
+  padding: 10rem;
   background-repeat: no-repeat;
   background-size: 100%, 120rem;
   background-position: left center;
@@ -135,13 +142,12 @@ img {
 .sobre-nosostros-flex {
   display: flex;
   justify-content: flex-end;
-
-
 }
 
 .texto-nosotros {
   flex-basis: 46%;
   color: white;
+  text-align: justify;
 }
 
 /* Lsitado de productos */
@@ -160,14 +166,35 @@ img {
 
 .producto:nth-child(1) {
   grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+}
+
+.producto:nth-child(1) img {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+
 }
 
 .producto:nth-child(2) {
   grid-column: 1 / 4;
 }
 
+.producto:nth-child(2) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 .producto:nth-child(3) {
   grid-column: 4 / 7;
+}
+
+.producto:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .producto:nth-child(4) {
@@ -189,7 +216,8 @@ img {
 .texto-producto {
   text-align: center;
   color: white;
-  padding: 5rem;
+  margin: auto;
+  padding: 1rem;
 }
 
 .texto-producto h3{
@@ -197,11 +225,56 @@ img {
 }
 
 .texto-producto p {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.4rem 0;
 }
 
 .precio {
   font-size: 2.8rem;
   font-weight: 900;
+}
+
+
+/* footer */
+
+.site-footer {
+  border-top: 0.1rem solid #e1e1e1;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+
+.footer-menu a {
+  display: block;
+}
+
+.site-footer h3 {
+  margin-bottom: 1rem;
+}
+
+
+.copyright {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Nosotros */
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 4rem;
+}
+
+.informacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
