@@ -46,13 +46,15 @@ a {
   display: block;
   color: black;
   padding: 1rem 5rem;
-  transition: background-color .5s ease-out;
+  transition: background-color .4s ease-out;
   text-align: center;
+  border-radius: 1rem;
 }
 
 .btn-nav:hover {
   background-color: #305e79;
   color: #e1e1e1;
+  border-radius: 1rem;
 }
 
 .contenedor {
@@ -96,6 +98,7 @@ img {
 
 .nombre-sitio {
     margin-top: 5rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 
 }
@@ -124,8 +127,8 @@ img {
 
 .listado-categorias{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .categorias {
@@ -134,6 +137,7 @@ img {
 
 .categoria {
   margin-bottom: 2rem;
+  padding-top: 0rem;
 }
 
 .categoria img {
@@ -143,7 +147,7 @@ img {
 .categoria a {
   display: block;
   text-align: center;
-  padding: 2rem;
+  padding: 0.8rem;
   font-size: 2rem;
 }
 .categoria a:hover{
