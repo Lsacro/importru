@@ -38,6 +38,21 @@ a {
 
 .contenedor-navegacion {
   border: 0.1px solid #e1e1e1;
+  margin-bottom: 0.3rem;
+  padding: 0;
+}
+
+.btn-nav{
+  display: block;
+  color: black;
+  padding: 1rem 5rem;
+  transition: background-color .5s ease-out;
+  text-align: center;
+}
+
+.btn-nav:hover {
+  background-color: #305e79;
+  color: #e1e1e1;
 }
 
 .contenedor {
@@ -58,16 +73,23 @@ img {
   font-weight: 900;
   padding: 1rem;
   transition: background-color .3s ease-out;
+  text-align: center;
+  border: none;
 }
 
 .btn:hover {
   background-color: #769d00e2;
+  cursor: pointer;
 }
 
 /* Utilidades */
 
 .text-center {
   text-align: center;
+}
+
+.max-width-30 {
+  max-width: 30rem;
 }
 
 /* Header y Navegación */
@@ -86,8 +108,8 @@ img {
   padding: 20px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between ;
+  padding: 0;
 }
 
 .hero {
@@ -278,3 +300,96 @@ img {
   justify-content: center;
 }
 
+/* Blog */
+
+.contenedor-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+
+.entrada {
+  border-bottom: 0.2rem solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+
+}
+
+.entrada:last-of-type {
+  border: none;
+}
+
+.entrada-meta {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.entrada-meta p {
+  font-weight: 700;
+}
+
+.entrada-meta span {
+  color: #305e79;
+}
+
+
+.contenido-entrada-blog {
+  width: 60rem;
+  margin: auto;
+}
+
+/* Galeria */
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria img {
+  height: 40rem;
+  width: 40rem;
+  object-fit: cover;
+}
+
+/* Formulario */
+
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.formulario fieldset {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+
+}
+
+.formulario legend {
+  background-color: #305e79;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+
+.campo label {
+  flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]), .campo textarea, .campo select {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+}

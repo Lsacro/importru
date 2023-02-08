@@ -20,12 +20,12 @@
     <div class="contenedor-navegacion">
 
       <nav class="nav-principal contenedor">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="nosotros.html">Nosotros</a>
+        <a class="btn-nav" href="tienda.html">Tienda</a>
+        <a class="btn-nav" href="blog.html">Blog</a>
+        <a class="btn-nav" href="galeria.html">Galeria</a>
+        <a class="btn-nav" href="contacto.html">Contacto</a>
       </nav>
 
     </div>
@@ -36,7 +36,7 @@
 
       <section class="contenedor-blog">
         <div class="blog">
-          <article>
+          <article class="entrada">
 
               <h2>Guía de Colores</h2>
 
@@ -44,7 +44,7 @@
                 <img src="/img/nosotros.jpg" alt="imagen blog">
               </div>
               
-              <div>
+              <div class="entrada-meta">
                 <p>Fecha: <span>01 de Octubre de 2023</span></p>
                 <p>Escrito por: <span>ImporTru</span></p>
               </div>
@@ -55,9 +55,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non odio rerum reiciendis necessitatibus, at dolorum voluptatem ipsum amet velit dignissimos qui laudantium, impedit voluptas quia natus, esse exercitationem. Velit?</p>
               </div>
 
+              <a href="entrada.html" class="btn max-width-30">Leer</a>
+
           </article>
 
-          <article>
+          <article class="entrada">
 
             <h2>Guía de Colores</h2>
 
@@ -65,7 +67,7 @@
               <img src="/img/nosotros.jpg" alt="imagen blog">
             </div>
             
-            <div>
+            <div class="entrada-meta">
               <p>Fecha: <span>01 de Octubre de 2023</span></p>
               <p>Escrito por: <span>ImporTru</span></p>
             </div>
@@ -75,13 +77,19 @@
 
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non odio rerum reiciendis necessitatibus, at dolorum voluptatem ipsum amet velit dignissimos qui laudantium, impedit voluptas quia natus, esse exercitationem. Velit?</p>
             </div>
-
+            <a href="entrada.html" class="btn max-width-30">Leer</a>
         </article>
 
         </div>
 
         <aside>
-            
+          <h3>Otras Entradas de Blog</h3>
+          <ul>
+            <li><a href="">Guía de colores</a></li>
+            <li><a href=""></a>Nuevos modelos</li>
+            <li><a href="">Guía para diseño de interiores</a></li>
+            <li><a href="">Guía para diseño de exteriores</a></li>
+          </ul>    
         </aside>
 
       </section>
