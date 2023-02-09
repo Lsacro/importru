@@ -39,7 +39,7 @@ a {
 /* --root-- */
 
 :root {
-  --main-color: #1A252D;
+  --main-color: #1C262F;
 }
 
 /* --root-- */
@@ -66,7 +66,7 @@ a {
 }
 
 .btn-nav:hover {
-  background-color: var(--main-color);
+  background-color: #224e67;
   color: #e1e1e1;
   border-radius: 1rem;
 }
@@ -118,7 +118,7 @@ img {
 }
 
 .nombre-sitio span{
-    color: #305e79;
+    color: #224e67;
 }
 
 .nav-principal {
@@ -165,7 +165,7 @@ img {
   font-size: 2rem;
 }
 .categoria a:hover{
-  background: var(--main-color);
+  background: #224e67;
   color: white;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -189,6 +189,11 @@ img {
   flex-basis: 46%;
   color: white;
   text-align: justify;
+}
+
+.nosotros-pregunta {
+  margin: 0;
+  font-size: 3rem;
 }
 
 /* Lsitado de productos */
@@ -296,7 +301,7 @@ img {
 .site-footer {
   border-top: 0.1rem solid #e1e1e1;
   margin-top: 3rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   max-height: 35rem;
   background-color: var(--main-color);
   display: grid;
@@ -336,8 +341,9 @@ img {
 .contenido-nosotros {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   column-gap: 4rem;
+  align-items: center;
 }
 
 .informacion-nosotros {
@@ -375,7 +381,7 @@ img {
 }
 
 .entrada-meta span {
-  color: #305e79;
+  color: #224e67;
 }
 
 
@@ -415,7 +421,7 @@ img {
 }
 
 .formulario legend {
-  background-color: #305e79;
+  background-color: #224e67;
   width: 100%;
   text-align: center;
   color: #fff;
