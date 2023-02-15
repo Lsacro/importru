@@ -71,6 +71,21 @@ a {
   border-radius: 1rem;
 }
 
+.btn-nav-tienda{
+  display: block;
+  color: black;
+  padding: 1rem 2rem;
+  transition: background-color .4s ease-out;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.btn-nav-tienda:hover {
+  background-color: #224e67;
+  color: #e1e1e1;
+  border-radius: 1rem;
+}
+
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
@@ -108,6 +123,10 @@ img {
   max-width: 30rem;
 }
 
+.margen-0 {
+  margin: 0;
+}
+
 /* Header y Navegación */
 
 .nombre-sitio {
@@ -122,10 +141,16 @@ img {
 }
 
 .nav-principal {
-  padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between ;
+  padding: 0;
+}
+
+.nav-tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -140,13 +165,14 @@ img {
 /* Categorias */
 
 .listado-categorias{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
 .categorias {
-  padding-top: 5rem 0;
+  padding-top: 5rem;
 }
 
 .categoria {
@@ -199,7 +225,7 @@ img {
 /* Lsitado de productos */
 
 .contenido-principal {
- padding-top: 5rem; 
+ padding-top: 2rem; 
 
 }
 
@@ -444,4 +470,90 @@ img {
 .campo input:not([type="radio"]), .campo textarea, .campo select {
   flex: 1;
   border: 1px solid #e1e1e1;
+}
+
+/* Tienda */
+
+.producto-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.items {
+  padding-top: 0rem;
+}
+
+.items {
+  width: 100%;
+}
+
+.items a {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.2rem;
+}
+
+.items a:hover {
+  background: #224e67;
+  color: white;
+  border-radius: 1.5rem;
+  border: 0.2rem solid black;
+  margin: 0;
+}
+
+/* Laptops */
+
+.margen{
+  margin-top: 4rem;
+}
+
+.nav-laptos {
+  display: flex;
+  flex-direction: row;
+  max-width: 130rem;
+  margin: 0px auto;
+}
+
+.laptops-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 140rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.laptops-grid p {
+  text-align: center;
+  margin: 0;
+}
+
+
+.contenedor-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centrar{
+  max-width: 8rem;
+  font-size: 2.1rem;
+}
+
+.centrar:hover{
+  color: #1C262F;
+  font-weight: bold;
+}
+
+.titulo-producto{
+  color: #4c7792;
+  font-family: serif;
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+.borde-producto{
+  border: 2px solid #e1e1e1;
 }
