@@ -21,16 +21,30 @@ h1, h2, h3 {
 
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h3 {
   font-size: 3rem;
 }
+
+@media (min-width: 768px) { 
+  h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+ }
 
 a {
   text-decoration: none;
@@ -276,6 +290,12 @@ img {
 
 /* Lsitado de productos */
 
+.producto img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 768px) { 
   .listado-productos {
     display: grid;
@@ -312,7 +332,7 @@ img {
   .producto:nth-child(3) img {
     height: 30rem;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
   }
   
   .producto:nth-child(4) {
@@ -322,7 +342,8 @@ img {
   .producto:nth-child(4) img {
     height: 25rem;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
+    
   }
   
   .producto:nth-child(5) {
@@ -332,7 +353,7 @@ img {
   .producto:nth-child(5) img {
     height: 25rem;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   
   .producto:nth-child(6) {
@@ -342,7 +363,7 @@ img {
   .producto:nth-child(6) img {
     height: 25rem;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   } 
  }
 
