@@ -396,13 +396,19 @@ img {
 
 .site-footer {
   border-top: 0.1rem solid #e1e1e1;
-  margin-top: 3rem;
+  margin-top: 0;
   padding-top: 2rem;
   max-height: 35rem;
   background-color: var(--main-color);
   display: grid;
   justify-items: center;
 }
+
+@media (min-width: 768px) { 
+  .site-footer {
+    margin-top: 3rem;
+  } 
+ }
 
 
 .site-footer p{
