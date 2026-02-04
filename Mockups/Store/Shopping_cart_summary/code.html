@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPROTRU - Shopping Cart</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ed1d38",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221013",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased min-h-screen flex flex-col">
+<!-- Header (Adapted from TopNavBar) -->
+<header class="sticky top-0 z-50 w-full border-b border-[#f3e7e9] dark:border-white/10 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16 sm:h-20">
+<!-- Logo -->
+<div class="flex items-center gap-4 text-[#1b0d0f] dark:text-white">
+<div class="size-6 sm:size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl sm:text-2xl font-bold leading-tight tracking-tight">IMPROTRU</h2>
+</div>
+<!-- Desktop Nav & Actions -->
+<div class="flex items-center justify-end gap-4 sm:gap-8">
+<nav class="hidden md:flex items-center gap-6 lg:gap-9">
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Hardware</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-slate-900 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-100/50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Secure</span>
+</div>
+<a class="relative p-2 text-slate-900 dark:text-white hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white ring-2 ring-background-light dark:ring-background-dark">3</span>
+</a>
+<button class="md:hidden p-2 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<!-- Breadcrumb / Back Navigation -->
+<div class="mb-6 lg:mb-10">
+<a class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                Continue Shopping
+            </a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+<!-- Left Column: Cart List -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Page Heading -->
+<div class="flex flex-wrap items-baseline justify-between gap-4 pb-4 border-b border-slate-200 dark:border-white/10">
+<h1 class="text-3xl sm:text-4xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white">Your Shopping Cart</h1>
+<p class="text-[#9a4c56] dark:text-primary/80 text-base font-normal leading-normal">3 items in your cart</p>
+</div>
+<!-- Cart Items List -->
+<div class="flex flex-col gap-4">
+<!-- Item 1 -->
+<div class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-white/5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-white/10 shadow-sm transition-all">
+<div class="shrink-0">
+<div class="bg-gray-100 dark:bg-gray-800 rounded-lg size-24 sm:size-28 bg-center bg-cover border border-slate-100 dark:border-white/5" data-alt="Silver Dell PowerEdge server rack unit front view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxBtXxz6180XOl-iAAp6TBaMRTMNlUVcPScskxA1pYO7wcEveir0MiAjFyDJG1UN-9juDRZVnsztv1YIYfF2h-QuZrPzvF8LRas5WUYlGuRtMhycqMq3kICd4qrLjLusn-wLvggVFgGKjxy9j6xm3ML--0u_vJ5f1WeofAjnAN22YD7h26jVajEgAN4vUmoIacLqrcLfgGMn7Mo74lsnPUVxinv4Cy-Mg8J-0uITvvuM7UutsgqN9N-yv7MybFkk7FjaXuB4LAFxb6");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold leading-snug text-slate-900 dark:text-white">Dell PowerEdge R750 - Rack-mountable - 2U</h3>
+<div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+<span>SKU: PE-R750-XS</span>
+<span class="flex items-center gap-1 text-green-600 dark:text-green-400 font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> In Stock
+                                        </span>
+</div>
+</div>
+<p class="text-lg font-bold text-slate-900 dark:text-white tabular-nums text-right">$2,499.00</p>
+</div>
+<div class="flex items-end justify-between mt-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-background-light dark:bg-black/20 rounded-lg p-1 border border-transparent focus-within:border-primary/50 transition-colors">
+<button aria-label="Decrease quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<input class="w-8 p-0 text-center bg-transparent border-none text-sm font-medium focus:ring-0 text-slate-900 dark:text-white" min="1" type="number" value="1"/>
+<button aria-label="Increase quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="text-sm font-medium text-slate-400 hover:text-primary underline decoration-dotted underline-offset-4 transition-colors">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-white/5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-white/10 shadow-sm transition-all">
+<div class="shrink-0">
+<div class="bg-gray-100 dark:bg-gray-800 rounded-lg size-24 sm:size-28 bg-center bg-cover border border-slate-100 dark:border-white/5" data-alt="Cisco network switch device with ethernet ports" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAg1dBKdp8jhgc5tFZm_gVneOWER8XOx0ml73m0yTvSbfIKC21XnnlyD_yLWD70LPoGEaj-Ns3x2vnEtaa-FW5ufaxrR1u1IfqIDmSwmm6mdT0eOYOi2uwLuLzxeTLsEfXxoMgeRR4aVXYK9U-E1NqsB-rnxs9B1mL9suvgaMU5ul_tnrv2SC8nPEWfI0ricwNOQSnjCq4LJHGuYHlJ268j5qa-tckH0hAT2Dzm19QYVUF1UPRJ7_kD2g5IyL-1gb783Raog30Bu9El");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold leading-snug text-slate-900 dark:text-white">Cisco Catalyst 9200L Switch</h3>
+<div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+<span>SKU: C9200L-48P-4G-E</span>
+<span class="flex items-center gap-1 text-amber-600 dark:text-amber-400 font-medium">
+<span class="material-symbols-outlined text-[14px]">warning</span> Low Stock
+                                        </span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-bold text-slate-900 dark:text-white tabular-nums">$3,700.00</p>
+<p class="text-xs text-slate-500 font-medium tabular-nums">$1,850.00 ea</p>
+</div>
+</div>
+<div class="flex items-end justify-between mt-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-background-light dark:bg-black/20 rounded-lg p-1 border border-transparent focus-within:border-primary/50 transition-colors">
+<button aria-label="Decrease quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<input class="w-8 p-0 text-center bg-transparent border-none text-sm font-medium focus:ring-0 text-slate-900 dark:text-white" min="1" type="number" value="2"/>
+<button aria-label="Increase quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="text-sm font-medium text-slate-400 hover:text-primary underline decoration-dotted underline-offset-4 transition-colors">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-white/5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-white/10 shadow-sm transition-all">
+<div class="shrink-0">
+<div class="bg-gray-100 dark:bg-gray-800 rounded-lg size-24 sm:size-28 bg-center bg-cover border border-slate-100 dark:border-white/5" data-alt="White circular Ubiquiti wireless access point device" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAG3gCvPTOmYunbt5fb8SnBigw6d6SjDwCLHRFw-Dai6C-zQWsTP6a5BRZvts-nfa09YOTLdMoveOggMEJ_M_pvJYoKhnTTCrPUHYMQrWJoB2I742wW3x8n_z5xWPmZGXrnkXnvNxHwe0IlWUpdAbzb22f_LoYjzBly2G5AmWV17m8-Kh40lQnPURnBwREarjLehPzKI8VnvPpyW6dvdmYLWuDGqfmfaZiO8V6FKdlPPx5bmH6N7bLqBAzIFD5vWvqZFiWnNEsSTkrp");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold leading-snug text-slate-900 dark:text-white">Ubiquiti UniFi 6 Long-Range Access Point</h3>
+<div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
+<span>SKU: U6-LR-US</span>
+<span class="flex items-center gap-1 text-green-600 dark:text-green-400 font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> In Stock
+                                        </span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-bold text-slate-900 dark:text-white tabular-nums">$895.00</p>
+<p class="text-xs text-slate-500 font-medium tabular-nums">$179.00 ea</p>
+</div>
+</div>
+<div class="flex items-end justify-between mt-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-background-light dark:bg-black/20 rounded-lg p-1 border border-transparent focus-within:border-primary/50 transition-colors">
+<button aria-label="Decrease quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<input class="w-8 p-0 text-center bg-transparent border-none text-sm font-medium focus:ring-0 text-slate-900 dark:text-white" min="1" type="number" value="5"/>
+<button aria-label="Increase quantity" class="flex size-7 items-center justify-center rounded-md bg-white dark:bg-white/10 shadow-sm hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="text-sm font-medium text-slate-400 hover:text-primary underline decoration-dotted underline-offset-4 transition-colors">Remove</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-4">
+<div class="sticky top-28 flex flex-col gap-6">
+<div class="bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 p-6 sm:p-8 shadow-sm">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Order Summary</h2>
+<div class="space-y-4 text-sm">
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Subtotal</span>
+<span class="font-bold text-slate-900 dark:text-white tabular-nums">$7,094.00</span>
+</div>
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Shipping estimate</span>
+<span class="font-medium text-slate-500 dark:text-slate-500 italic">Calculated at checkout</span>
+</div>
+<div class="flex justify-between text-slate-600 dark:text-slate-400">
+<span>Tax estimate</span>
+<span class="font-medium text-slate-500 dark:text-slate-500 italic">Calculated at checkout</span>
+</div>
+<!-- Promo Code Input -->
+<div class="pt-4 pb-2">
+<label class="sr-only" for="promo">Promo Code</label>
+<div class="flex gap-2">
+<input class="flex-1 rounded-lg border-slate-200 dark:border-white/10 bg-background-light dark:bg-black/20 text-sm placeholder:text-slate-400 focus:ring-primary focus:border-primary transition-all" id="promo" placeholder="Promo code" type="text"/>
+<button class="px-4 py-2 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-white text-sm font-bold rounded-lg transition-colors">Apply</button>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-white/10 pt-4 mt-2">
+<div class="flex justify-between items-end">
+<span class="text-lg font-bold text-slate-900 dark:text-white">Total</span>
+<div class="text-right">
+<span class="text-xs text-slate-400 mb-0.5 block">USD</span>
+<span class="text-2xl font-black text-slate-900 dark:text-white tabular-nums leading-none tracking-tight">$7,094.00</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full mt-8 bg-primary hover:bg-[#c91830] text-[#fcf8f9] text-base font-bold h-12 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 group">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-6 flex flex-col items-center gap-2">
+<div class="flex items-center gap-3 text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-3xl" title="Secure SSL">lock</span>
+<span class="material-symbols-outlined text-3xl" title="Credit Card">credit_card</span>
+<span class="material-symbols-outlined text-3xl" title="Verified">verified_user</span>
+</div>
+<p class="text-[11px] text-slate-400 font-medium">Secure SSL Encrypted Transaction</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Minimal Footer -->
+<footer class="mt-auto py-8 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-white/5">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<p class="text-sm text-slate-500 dark:text-slate-400">© 2024 IMPROTRU Solutions. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

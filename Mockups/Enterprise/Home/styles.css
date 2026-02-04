@@ -1,0 +1,265 @@
+/* =========================
+   VARIABLES & THEME
+========================= */
+:root {
+  --primary: #ed1a37;
+  --whatsapp-green: #25d366;
+
+  --bg-light: #f8f6f6;
+  --bg-dark: #211113;
+
+  --text-main: #303130;
+  --text-secondary: #5e5f5f;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+html.light {
+  --bg: var(--bg-light);
+  --text: var(--text-main);
+}
+
+html.dark {
+  --bg: var(--bg-dark);
+  --text: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+     UTILITIES (Tailwind core)
+  ========================= */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+
+.rounded {
+  border-radius: var(--radius-sm);
+}
+.rounded-lg {
+  border-radius: var(--radius-md);
+}
+.rounded-xl {
+  border-radius: var(--radius-lg);
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.shadow {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+     CONTAINERS
+  ========================= */
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* =========================
+     HEADER
+  ========================= */
+header {
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  background: rgba(248, 246, 246, 0.95);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+html.dark header {
+  background: rgba(33, 17, 19, 0.95);
+  border-color: #333;
+}
+
+header nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+     BUTTONS
+  ========================= */
+.btn {
+  height: 48px;
+  padding: 0 2rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #d61731;
+}
+
+.btn-outline {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+     HERO
+  ========================= */
+.hero {
+  min-height: 600px;
+  background: #211113;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* =========================
+     TABS
+  ========================= */
+.tab-nav label {
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+#tab-datacenter:checked ~ .tab-nav label[for="tab-datacenter"],
+#tab-licensing:checked ~ .tab-nav label[for="tab-licensing"],
+#tab-virtualization:checked ~ .tab-nav label[for="tab-virtualization"],
+#tab-protection:checked ~ .tab-nav label[for="tab-protection"] {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* =========================
+     ANIMATIONS
+  ========================= */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  5%,
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  38%,
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fade-slide {
+  animation: fadeSlide 9s infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+/* =========================
+     WHATSAPP FLOAT
+  ========================= */
+.whatsapp {
+  width: 56px;
+  height: 56px;
+  background: var(--whatsapp-green);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}

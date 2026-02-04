@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPROTRU - ProBook X1 Product Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e91c37",
+                        "background-light": "#fcf8f9",
+                        "background-dark": "#211113",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b0e0f] font-display min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/95 backdrop-blur-sm border-b border-[#f3e7e9]">
+<div class="layout-container flex justify-center w-full">
+<div class="px-4 md:px-10 py-3 w-full max-w-[1440px]">
+<div class="flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#1b0e0f]">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">hexagon</span>
+</div>
+<h2 class="text-[#1b0e0f] text-2xl font-bold leading-tight tracking-[-0.015em]">IMPROTRU</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-[#1b0e0f]/60 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Corporate Solutions</a>
+<a class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-0.5" href="#">Retail Store</a>
+<a class="text-[#1b0e0f]/60 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Support</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-[#f3e7e9] bg-white overflow-hidden focus-within:ring-2 focus-within:ring-primary/20 transition-shadow">
+<div class="text-[#994d57] flex border-none bg-transparent items-center justify-center pl-3">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#1b0e0f] focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-[#994d57]/50 px-3 text-sm font-normal leading-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<div class="flex gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-[#f3e7e9] text-[#1b0e0f] transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-2.5 bg-primary rounded-full border-2 border-white"></span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-[#f3e7e9] text-[#1b0e0f] transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<div class="layout-container flex justify-center w-full">
+<div class="px-4 md:px-10 py-5 w-full max-w-[1440px]">
+<!-- Breadcrumbs & Back Link -->
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+<div class="flex flex-wrap gap-2 items-center text-sm">
+<a class="text-[#994d57] hover:text-primary font-medium transition-colors" href="#">Home</a>
+<span class="text-[#994d57]/40 material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="text-[#994d57] hover:text-primary font-medium transition-colors" href="#">Retail</a>
+<span class="text-[#994d57]/40 material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="text-[#994d57] hover:text-primary font-medium transition-colors" href="#">Laptops</a>
+<span class="text-[#994d57]/40 material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-[#1b0e0f] font-semibold">ProBook X1</span>
+</div>
+<a class="flex items-center gap-2 text-sm font-bold text-primary hover:text-primary/80 transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                        Back to Store
+                    </a>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+<!-- Left Column: Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Main Image -->
+<div class="aspect-[4/3] w-full bg-white rounded-xl shadow-sm border border-[#f3e7e9] p-8 flex items-center justify-center relative overflow-hidden group">
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+<span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">NEW ARRIVAL</span>
+<span class="bg-[#1b0e0f] text-white text-xs font-bold px-3 py-1 rounded-full">RTX 4090</span>
+</div>
+<img alt="Sleek high-performance laptop open on a desk" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500" data-alt="Modern silver laptop opened displaying a vibrant screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQhbkKdb6BPHCztH-XN4yh2pEBGKYH68zdQR9IKatnAUc-2cD_HXFB5ryTRZJFy9ISfCAh-ZiTT1F-r1UXuV95CulLRPRgxK5YzWJYzmbtf-sat_9d9XIe3xvbSTqUxDIy_k8qwem7xmgeGJlmXh9lzyddW0rIDf_zKNMRNNS7-TZ-04SaoVvNSXQNov8GW1-7CkZbYRVtEjkt-GhK7cjg6Anb6wEVe6sx7DcjRwsCtSWcjmp56SuodIgoUmAxlIt9YzgewE_vAJq7"/>
+</div>
+<!-- Thumbnails -->
+<div class="grid grid-cols-4 gap-4">
+<button class="aspect-square rounded-lg border-2 border-primary bg-white p-2 overflow-hidden ring-2 ring-primary/20 transition-all">
+<img class="w-full h-full object-contain" data-alt="Front view of laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq5E2pqnEXF86JuKFqDDM1v854IkDriQ7KqkeW_L2MKaPb0ExoY90OGHcrm1FtwG38tQBSJUfIEb8cl6XLqEKhAGZUnZ76QZ16Aj4bsAObKkM4tGCfODpcENc6eIPCSWR0xEjyctKA2_PSa-ZE2Hnp7PLoXRFYyQTc7DHsfF7nQnrQCQ1NLQWugebyycGsbW8WvkNDc5oERu4B2Tvmj-S_EO0RoZuo28kKvDDAIKvvAgLsfYLImyxn7GTlCw6Vo6DG1vKBXsimmfyL"/>
+</button>
+<button class="aspect-square rounded-lg border border-[#f3e7e9] bg-white p-2 overflow-hidden hover:border-primary/50 transition-colors">
+<img class="w-full h-full object-contain" data-alt="Side profile of thin laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZDQXKwdLUztOtW14v576aE1uhLcKUikaodDL24AuDBX6Vcqm07bdkbYwPEPojCh8git8JsmsKsI7MUhB5isAbuoUbTh8yVd6ZVTAJDlBYGmvonI9bNhDxwbTcsU3Qio2o0bxV01ipuPdgN0mNzaVVhW7N557-YPSUouukKyQz8ezDu5O1gjTs-pKx9T1sOuYUPCfXcmAcwWyH-nrj9baoT_8bM5CDTKxiT5QN8CwaxHm1TZloBG_fmYIlE_AeNkj63O20Q1TrMinL"/>
+</button>
+<button class="aspect-square rounded-lg border border-[#f3e7e9] bg-white p-2 overflow-hidden hover:border-primary/50 transition-colors">
+<img class="w-full h-full object-contain" data-alt="Laptop keyboard close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2nYuCofx-yEwvd3_uLwTqjxOSP3FBpxN4TQeRjCqx17hhs2Iv4BliiMnYPPXJQgEzdxJtmt8A0KvqIOMdlpVYEf8s9k_mdONozunEdrgQ9pWS_5VkgWG_NViWbY5DKAMIt9APxIparx2yZq0wW9PpUHFaMb9HSiOK0Cf98xaNVL3YuKOGC4cMNo_DR79YCKrnKaFw3J6KGTkzaOQKGxAbTtKW8J18EDMFbwr3kFH2sdpjZahhAvkh4sqU6iElKhdjzRw3CwCNn2Nz"/>
+</button>
+<button class="aspect-square rounded-lg border border-[#f3e7e9] bg-white p-2 overflow-hidden hover:border-primary/50 transition-colors relative">
+<div class="absolute inset-0 bg-black/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-gray-600">play_circle</span>
+</div>
+<img class="w-full h-full object-cover opacity-50" data-alt="Video thumbnail of laptop features" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqOo8JEoKo1AXZDcN-FIGl4-KATC5FiuSqGt9Asy8cHE85dvdWYmy9MLs77nt72c4wMWJ4Q-jKt14BCFxVyK_2M9YbxsunP316VDS-U2ya4mhy7ccyi1bcm3c75iLkc2-oCpinDn_JkUD1z3nMYlO5LHwtKgOqNIpbMNbYnA6sZq7VkOlNMCRm62PrGe30XVOk4RQPHeyo2tWsjNWuLQSCScCdpblwlcWw3jhLcNNSkkeJz_u2WNAcnVdTWRZ0sTqDGmr80kJsJDDQ"/>
+</button>
+</div>
+</div>
+<!-- Right Column: Product Details -->
+<div class="lg:col-span-5 flex flex-col h-full">
+<div class="sticky top-24">
+<!-- Title & Rating -->
+<h1 class="text-4xl md:text-5xl font-bold text-[#1b0e0f] mb-3 leading-tight tracking-tight">IMPROTRU ProBook X1</h1>
+<div class="flex items-center gap-4 mb-6">
+<div class="flex gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current text-primary/30">star</span>
+</div>
+<span class="text-sm font-medium text-[#1b0e0f]/60 underline cursor-pointer hover:text-primary">124 Reviews</span>
+<span class="w-1 h-1 bg-[#1b0e0f]/20 rounded-full"></span>
+<span class="text-sm font-medium text-[#1b0e0f]/60">Model: IP-PBX1-2024</span>
+</div>
+<!-- Price -->
+<div class="mb-8">
+<div class="flex items-baseline gap-3">
+<span class="text-4xl font-bold text-primary">$2,499.00</span>
+<span class="text-xl text-[#1b0e0f]/40 line-through decoration-1">$2,799.00</span>
+</div>
+<div class="flex items-center gap-2 mt-2 text-sm font-medium text-emerald-600 bg-emerald-50 w-fit px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                                    In Stock - Ships Tomorrow
+                                </div>
+</div>
+<!-- Short Description -->
+<p class="text-[#1b0e0f]/80 leading-relaxed mb-8 font-body">
+                                Engineered for high-performance computing, the ProBook X1 features the latest Intel Core i9 processor and a stunning 4K OLED display. Perfect for creative professionals and corporate power users demanding reliability and speed.
+                            </p>
+<!-- Configuration Selectors (Simplified) -->
+<div class="space-y-6 mb-8 border-t border-b border-[#f3e7e9] py-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-sm font-bold text-[#1b0e0f]">Memory</label>
+<div class="relative">
+<select class="w-full rounded-lg border-[#f3e7e9] bg-white text-[#1b0e0f] font-medium focus:border-primary focus:ring-primary">
+<option>32GB DDR5</option>
+<option>64GB DDR5 (+$200)</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-[#1b0e0f]">Storage</label>
+<div class="relative">
+<select class="w-full rounded-lg border-[#f3e7e9] bg-white text-[#1b0e0f] font-medium focus:border-primary focus:ring-primary">
+<option>1TB NVMe SSD</option>
+<option>2TB NVMe SSD (+$150)</option>
+<option>4TB NVMe SSD (+$400)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex gap-4 mb-6">
+<div class="w-24">
+<input class="w-full rounded-lg border-[#f3e7e9] text-center font-bold text-lg h-12 focus:border-primary focus:ring-primary" min="1" type="number" value="1"/>
+</div>
+<button class="flex-1 bg-primary hover:bg-red-700 text-white font-bold rounded-lg h-12 shadow-lg shadow-primary/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                    Add to Cart
+                                </button>
+<button class="size-12 flex items-center justify-center rounded-lg border border-[#f3e7e9] hover:bg-gray-50 text-[#1b0e0f] transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-2 text-center text-xs text-[#1b0e0f]/70 font-medium">
+<div class="flex flex-col items-center gap-1 p-2 bg-white rounded border border-[#f3e7e9]">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+                                    2 Year Warranty
+                                </div>
+<div class="flex flex-col items-center gap-1 p-2 bg-white rounded border border-[#f3e7e9]">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+                                    Free Shipping
+                                </div>
+<div class="flex flex-col items-center gap-1 p-2 bg-white rounded border border-[#f3e7e9]">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+                                    24/7 Support
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Specs Section -->
+<div class="py-12 border-t border-[#f3e7e9]">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/4">
+<h3 class="text-2xl font-bold text-[#1b0e0f] mb-4">Technical Specifications</h3>
+<p class="text-[#1b0e0f]/60 text-sm mb-6">Detailed breakdown of the ProBook X1 hardware components and features.</p>
+<a class="inline-flex items-center text-primary font-bold text-sm hover:underline" href="#">
+<span class="material-symbols-outlined text-[18px] mr-1">download</span>
+                                Download Datasheet
+                            </a>
+</div>
+<div class="md:w-3/4">
+<div class="bg-white rounded-xl border border-[#f3e7e9] overflow-hidden shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#f3e7e9]">
+<!-- Column 1 -->
+<div class="divide-y divide-[#f3e7e9]">
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">memory</span> Processing
+                                            </div>
+<p class="font-bold text-[#1b0e0f]">Intel® Core™ i9-13900H</p>
+<p class="text-sm text-[#1b0e0f]/60 mt-1">14 Cores (6P + 8E), up to 5.4 GHz, 24MB Cache</p>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">screenshot_monitor</span> Display
+                                            </div>
+<p class="font-bold text-[#1b0e0f]">16" 4K OLED Touchscreen</p>
+<p class="text-sm text-[#1b0e0f]/60 mt-1">3840 x 2400 resolution, 100% DCI-P3, 500 nits, 120Hz</p>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">videogame_asset</span> Graphics
+                                            </div>
+<p class="font-bold text-[#1b0e0f]">NVIDIA® GeForce RTX™ 4090</p>
+<p class="text-sm text-[#1b0e0f]/60 mt-1">16GB GDDR6 VRAM</p>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="divide-y divide-[#f3e7e9]">
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">hard_drive</span> Memory &amp; Storage
+                                            </div>
+<div class="space-y-3">
+<div>
+<span class="block text-xs text-[#1b0e0f]/50">RAM</span>
+<span class="font-bold text-[#1b0e0f]">32GB DDR5-5200MHz</span>
+</div>
+<div>
+<span class="block text-xs text-[#1b0e0f]/50">Storage</span>
+<span class="font-bold text-[#1b0e0f]">1TB M.2 PCIe Gen 4 SSD</span>
+</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">battery_charging_full</span> Battery &amp; Power
+                                            </div>
+<p class="font-bold text-[#1b0e0f]">99.9Whr Battery</p>
+<p class="text-sm text-[#1b0e0f]/60 mt-1">Up to 14 hours battery life, 240W AC Adapter included</p>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-2 text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined">usb</span> Connectivity
+                                            </div>
+<ul class="text-sm text-[#1b0e0f]/80 space-y-1 list-disc list-inside">
+<li>2x Thunderbolt™ 4</li>
+<li>2x USB 3.2 Gen 2 Type-A</li>
+<li>1x HDMI 2.1</li>
+<li>SD Express 7.0 Card Reader</li>
+<li>Wi-Fi 6E AX1690i + Bluetooth 5.3</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Products -->
+<div class="py-12 border-t border-[#f3e7e9]">
+<div class="flex justify-between items-end mb-8">
+<h3 class="text-2xl font-bold text-[#1b0e0f]">Related Products</h3>
+<a class="text-primary font-bold text-sm hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-3">
+<div class="relative w-full aspect-[4/3] bg-white rounded-lg border border-[#f3e7e9] overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Tablet with keyboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG6Zwo33YqqIQS0JhHdoTMulogo7HZCnd_Z2fK0BzRu5fY_k1QjyGtTDHJD93uzNO17w3uNmd28vLpgeqrG5SxyE8KM9j-uDfPRwATVIv4Fipp4X5_lDZ1a7JiJBYI5PEUs6SwSiDKJ21EGPtAyDBRw2AuFiOuYw_Mo3-H8nvNf1UdFIQQ-7le1Iiv9oFlEtOCaIsWzWF1vbnvnSt0tmYy3wzfJsJCBKRLNJEzUqUqfPTwpYRjH_F78s8sR-g6NwSzMdJ-9PG4Tl2e"/>
+<button class="absolute bottom-3 right-3 bg-white p-2 rounded-full shadow-md text-[#1b0e0f] hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</button>
+</div>
+<div>
+<h4 class="font-bold text-[#1b0e0f] truncate">IMPROTRU Tab S8</h4>
+<p class="text-sm text-[#1b0e0f]/60">Ultra-portable tablet</p>
+<p class="text-primary font-bold mt-1">$899.00</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-3">
+<div class="relative w-full aspect-[4/3] bg-white rounded-lg border border-[#f3e7e9] overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Modern desktop monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTWTopJGb0ZLQ9Rm5CKgzyiH9h8QhJeilTW-OllnQZNFit8PoqPEx03bY2QDh851X-NT4cOc4MoEl34U89sWdbElkgIXnjzrOZ1u4JjqgLEbIQi-jSmk2UZIgpANgGvO1HdnvLpWyZ7JkUoLxUlSVX5AOPj4PUDz3LWl1OCQEEBcvXh8LYf1xGV2hpPbX4wkaG12eXhvzFWScxc4q3jIcW-7fcSqo19ovARiZLrI1C_ZlWlNDdvqnXPvqlMYn2lJygCfCDoV6VDOBM"/>
+<button class="absolute bottom-3 right-3 bg-white p-2 rounded-full shadow-md text-[#1b0e0f] hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</button>
+</div>
+<div>
+<h4 class="font-bold text-[#1b0e0f] truncate">ViewMax 32" Monitor</h4>
+<p class="text-sm text-[#1b0e0f]/60">4K HDR Display</p>
+<p class="text-primary font-bold mt-1">$499.00</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-3">
+<div class="relative w-full aspect-[4/3] bg-white rounded-lg border border-[#f3e7e9] overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Gaming mouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX3NhB1PfgzkA4KFPFXVcbB3yaeTdl-sK37sNeSXBqOw5UMaQnoR9YWv7pesUrseCMNspGe7ykIFPHY6x-T3iXwH4o6ZSgIlainY72TZdsrUdGwlfSnBTS1cz7FjEAlKcNtJZJpdFzHK_PSAnRKFIB5_B7LTNdD6Oa6XaGYTDBEoSIFxQdnZhqwzYpJB7agT1GngXtNB9vwTeYVqKCtUXp3Y-U7YO2sLozxKGk3Ye2sAr0ydWvRqMwdOtntp2xJLR0foljVR2SfbzI"/>
+<button class="absolute bottom-3 right-3 bg-white p-2 rounded-full shadow-md text-[#1b0e0f] hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</button>
+</div>
+<div>
+<h4 class="font-bold text-[#1b0e0f] truncate">Precision Mouse M1</h4>
+<p class="text-sm text-[#1b0e0f]/60">Wireless ergonomic mouse</p>
+<p class="text-primary font-bold mt-1">$79.00</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col gap-3">
+<div class="relative w-full aspect-[4/3] bg-white rounded-lg border border-[#f3e7e9] overflow-hidden p-4">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHNNZNzbtkG0zf5J1EQeDh3C5hnpt35C_1qcakLQo0NAbFcCHHue3pHf-qaNpHi7amRi4zNetQ7Oafs2dehRWubs_4u2t5GLzl-nP7OvmWX_HrcE2NOyW6IQ-txXXXWiWdy4_12jJE1wtnbdyvzZ0Gv2gOk8PeKvU7kg8UxN-YDhKH-Nt61CkH2CViTx_Lsgxoc-FblDjRJy-A3_SqBgdcT9gMVf-7U_BlhabjX7Pho9LSFWtFKRAU9JBOdhI9mLeMx0eKPZcY1o_K"/>
+<button class="absolute bottom-3 right-3 bg-white p-2 rounded-full shadow-md text-[#1b0e0f] hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</button>
+</div>
+<div>
+<h4 class="font-bold text-[#1b0e0f] truncate">Sonic Pro Headset</h4>
+<p class="text-sm text-[#1b0e0f]/60">Noise cancelling</p>
+<p class="text-primary font-bold mt-1">$249.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-[#f3e7e9] py-12">
+<div class="layout-container flex justify-center w-full">
+<div class="px-4 md:px-10 w-full max-w-[1440px]">
+<div class="flex flex-col md:flex-row justify-between gap-12">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="flex items-center gap-2 text-[#1b0e0f]">
+<span class="material-symbols-outlined text-3xl text-primary">hexagon</span>
+<h2 class="text-xl font-bold">IMPROTRU</h2>
+</div>
+<p class="text-sm text-[#1b0e0f]/60 leading-relaxed">
+                            Providing top-tier IT solutions for enterprises and premium hardware for professionals. Excellence in every byte.
+                        </p>
+</div>
+<div class="flex gap-16 flex-wrap">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#1b0e0f]">Shop</h4>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Laptops</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Desktops</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Peripherals</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Deals</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#1b0e0f]">Support</h4>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Contact Us</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">FAQs</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Warranty</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Downloads</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#1b0e0f]">Company</h4>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">About</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Careers</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Corporate Solutions</a>
+<a class="text-sm text-[#1b0e0f]/60 hover:text-primary" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-[#f3e7e9] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-[#1b0e0f]/40">© 2024 IMPROTRU Inc. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="text-[#1b0e0f]/40 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="text-[#1b0e0f]/40 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

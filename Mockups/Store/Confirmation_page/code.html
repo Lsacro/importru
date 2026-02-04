@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPROTRU Order Confirmation</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ed1d38",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221013",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2d1b1e",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark px-10 py-4 shadow-sm z-10">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">dns</span>
+</div>
+<h2 class="text-2xl font-bold leading-tight tracking-tight">IMPROTRU</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-8 hidden md:flex">
+<nav class="flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Retail</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Corporate IT Solutions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-md hover:bg-red-700 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center py-10 px-4 md:px-10 lg:px-20">
+<div class="w-full max-w-[960px] flex flex-col gap-8">
+<!-- Hero Section: Order Success -->
+<section class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 p-8 flex flex-col items-center text-center">
+<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-[48px] fill-1">check_circle</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold mb-2 tracking-tight">Thank You for Your Order!</h1>
+<p class="text-slate-500 dark:text-slate-400 max-w-lg text-lg mb-6">
+                        Hi Alex, thanks for choosing IMPROTRU. We’ve sent a confirmation email to <strong>alex@example.com</strong>.
+                    </p>
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">Order Reference:</span>
+<span class="text-sm font-bold text-primary tracking-wide">#8839201</span>
+</div>
+</section>
+<!-- Timeline -->
+<section class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 p-6 md:p-8">
+<div class="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto_1fr_auto_1fr_auto] gap-x-2 md:gap-x-0 items-center">
+<!-- Step 1 -->
+<div class="flex flex-col items-center gap-2 relative z-10">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<p class="text-xs md:text-sm font-bold text-primary absolute -bottom-8 whitespace-nowrap">Order Placed</p>
+</div>
+<!-- Line 1 -->
+<div class="h-1 bg-primary flex-1 min-w-[20px] md:min-w-[60px] mx-2 rounded-full"></div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center gap-2 relative z-10">
+<div class="size-10 rounded-full bg-white dark:bg-slate-800 border-2 border-primary text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</div>
+<p class="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400 absolute -bottom-8 whitespace-nowrap">Processing</p>
+</div>
+<!-- Line 2 -->
+<div class="h-1 bg-slate-200 dark:bg-slate-700 flex-1 min-w-[20px] md:min-w-[60px] mx-2 rounded-full"></div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center gap-2 relative z-10">
+<div class="size-10 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-300 dark:text-slate-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<p class="text-xs md:text-sm font-medium text-slate-300 dark:text-slate-600 absolute -bottom-8 whitespace-nowrap">Shipped</p>
+</div>
+<!-- Line 3 -->
+<div class="h-1 bg-slate-200 dark:bg-slate-700 flex-1 min-w-[20px] md:min-w-[60px] mx-2 rounded-full"></div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center gap-2 relative z-10">
+<div class="size-10 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-300 dark:text-slate-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">home_pin</span>
+</div>
+<p class="text-xs md:text-sm font-medium text-slate-300 dark:text-slate-600 absolute -bottom-8 whitespace-nowrap">Delivered</p>
+</div>
+</div>
+<div class="h-8 md:hidden"></div> <!-- Spacer for mobile labels -->
+</section>
+<!-- Grid: Summary & Delivery Info -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left Column: Order Summary (2/3) -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden">
+<div class="p-6 border-b border-slate-100 dark:border-slate-800">
+<h2 class="text-xl font-bold">Order Summary</h2>
+</div>
+<!-- Items Table -->
+<div class="w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-800/50 text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold">
+<th class="p-4 pl-6">Product</th>
+<th class="p-4 text-center">Qty</th>
+<th class="p-4 pr-6 text-right">Price</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+<!-- Item 1 -->
+<tr>
+<td class="p-4 pl-6">
+<div class="flex items-center gap-4">
+<div class="size-16 rounded-lg bg-slate-100 dark:bg-slate-700 bg-cover bg-center shrink-0" data-alt="Server rack hardware unit" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCf3pSdY_ziJz6TTz6_Q37Tq-y_wGbGPQ-irM4hjrJzo4xUBB0h89L2u51khbJv03raZi_WDEhCW2dUNWUYupMXlDTEXcuhEOljP_GHoijxaDEj22zhvTKA42osZAtLglXu0NqoU3gmZ4uVlX17vyyghAsH6SBQTfnnqlLvHa_cS6ZMhF_uS7IiKosU04Dh7jm4oeq7Rfprayo-ST3-i6nB1i2aAC42wAbLr17HJC3RiyfMOWoKstHqS1M01wRDplvycPpRC3s2gGK');"></div>
+<div>
+<p class="font-bold text-sm md:text-base">High-Performance Server Rack</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Model: SR-2024-X</p>
+</div>
+</div>
+</td>
+<td class="p-4 text-center font-medium">1</td>
+<td class="p-4 pr-6 text-right font-medium">$1,200.00</td>
+</tr>
+<!-- Item 2 -->
+<tr>
+<td class="p-4 pl-6">
+<div class="flex items-center gap-4">
+<div class="size-16 rounded-lg bg-slate-100 dark:bg-slate-700 bg-cover bg-center shrink-0" data-alt="Network switch with cables" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0pqEli9GrCA0brp1NJFVQlORU_zhiq2ZHPPUvVgNz4Ls5BN4eiXtS2JntQUhvBAspjuesgq0kHroJolT36h5-TZM990nRTKOH2TU0pJPJkKYHjzXw7kSoTb97SG8q5FMcAVh4UaJ5sh6iMg5XVZuWkp1tIE03_vTG22Mvuny9QuR3DFAVwyppMOewhjP08o_D9oayPLGDbsxo2EuNHXSyZhgGFpfHXMPGK22H-I764S5T-jQ6X-h9bAXZgmBrYOJVnP4fHyUUzLh_');"></div>
+<div>
+<p class="font-bold text-sm md:text-base">Enterprise Network Switch</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Model: SW-ENT-48</p>
+</div>
+</div>
+</td>
+<td class="p-4 text-center font-medium">2</td>
+<td class="p-4 pr-6 text-right font-medium">$900.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="border-t border-slate-100 dark:border-slate-800">
+<td class="p-3 text-right text-sm text-slate-500 dark:text-slate-400" colspan="2">Subtotal</td>
+<td class="p-3 pr-6 text-right text-sm font-medium">$2,100.00</td>
+</tr>
+<tr>
+<td class="p-3 text-right text-sm text-slate-500 dark:text-slate-400" colspan="2">Shipping</td>
+<td class="p-3 pr-6 text-right text-sm font-medium">$50.00</td>
+</tr>
+<tr>
+<td class="p-3 text-right text-sm text-slate-500 dark:text-slate-400" colspan="2">Tax</td>
+<td class="p-3 pr-6 text-right text-sm font-medium">$168.00</td>
+</tr>
+<tr class="bg-slate-50 dark:bg-slate-800/50">
+<td class="p-4 text-right text-base font-bold text-slate-900 dark:text-white" colspan="2">Total</td>
+<td class="p-4 pr-6 text-right text-lg font-bold text-primary">$2,318.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- Trust / Support Block -->
+<div class="bg-primary/5 border border-primary/10 rounded-xl p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
+<div class="p-3 bg-white dark:bg-slate-800 rounded-full shadow-sm text-primary shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-lg mb-1">Need help with setup?</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">Our corporate support team is available 24/7 to assist with hardware installation.</p>
+</div>
+<button class="text-sm font-bold text-primary hover:text-red-700 hover:underline whitespace-nowrap">
+                                Contact Support
+                            </button>
+</div>
+</div>
+<!-- Right Column: Delivery & Shipping (1/3) -->
+<div class="flex flex-col gap-6">
+<!-- Delivery Card -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 p-6">
+<h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+                                Delivery Details
+                            </h3>
+<div class="space-y-6">
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Estimated Arrival</p>
+<p class="text-xl font-bold text-slate-900 dark:text-white">Tuesday, Oct 28</p>
+<div class="w-full bg-slate-100 dark:bg-slate-700 rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full w-1/4"></div>
+</div>
+<p class="text-xs text-slate-400 mt-2">Carrier: FedEx Express</p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-2">Shipping Address</p>
+<p class="text-sm font-medium leading-relaxed">
+                                        Alex Johnson<br/>
+                                        404 Innovation Drive, Suite 200<br/>
+                                        San Francisco, CA 94105<br/>
+                                        United States
+                                    </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-2">Billing Method</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400">credit_card</span>
+<p class="text-sm font-medium">Visa ending in 4242</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions (Stacked on mobile, fit in col on desktop) -->
+<div class="flex flex-col gap-3">
+<button class="w-full py-3 px-6 bg-primary hover:bg-red-700 text-white font-bold rounded-lg shadow-md transition-all hover:shadow-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">arrow_back</span>
+                                Return to Home
+                            </button>
+<button class="w-full py-3 px-6 bg-transparent border-2 border-slate-200 dark:border-slate-700 hover:border-primary text-slate-700 dark:text-slate-200 hover:text-primary font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">receipt_long</span>
+                                View My Orders
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark py-12 px-10 mt-10">
+<div class="max-w-[960px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">dns</span>
+<span class="font-bold text-xl">IMPROTRU</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Empowering businesses with enterprise-grade hardware and IT solutions.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Shop</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Servers</a></li>
+<li><a class="hover:text-primary" href="#">Networking</a></li>
+<li><a class="hover:text-primary" href="#">Storage</a></li>
+<li><a class="hover:text-primary" href="#">Components</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Support</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Help Center</a></li>
+<li><a class="hover:text-primary" href="#">Returns &amp; Warranty</a></li>
+<li><a class="hover:text-primary" href="#">Order Status</a></li>
+<li><a class="hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Corporate</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">IT Consulting</a></li>
+<li><a class="hover:text-primary" href="#">Bulk Orders</a></li>
+<li><a class="hover:text-primary" href="#">Become a Partner</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[960px] mx-auto mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2023 IMPROTRU Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
