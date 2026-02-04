@@ -1,65 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../Shared/Navbar';
 
 const StoreHome = () => {
     return (
         <div className="bg-background-light dark:bg-background-dark font-body text-[#1b0e0f] dark:text-[#fcf8f9] min-h-screen flex flex-col">
             {/* Top Navigation */}
-            <header className="sticky top-0 z-50 w-full bg-surface-light dark:bg-surface-dark border-b border-[#f3e7e9] dark:border-[#3a2225] shadow-sm">
-                {/* Top Bar for Segment Switching */}
-                <div className="bg-[#f3e7e9] dark:bg-[#2d1b1e] px-4 py-1.5">
-                    <div className="max-w-[1280px] mx-auto flex justify-between items-center text-xs font-medium">
-                        <div className="flex gap-4">
-                            <span className="text-primary cursor-default">Retail Store</span>
-                            <Link className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors" to="/enterprise">Corporate Solutions</Link>
-                        </div>
-                        <div className="flex gap-4 text-gray-500 dark:text-gray-400">
-                            <a className="hover:text-primary transition-colors" href="#">Store Locator</a>
-                            <a className="hover:text-primary transition-colors" href="#">Support</a>
-                        </div>
-                    </div>
-                </div>
-                {/* Main Header Content */}
-                <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-20 gap-8">
-                        {/* Logo */}
-                        <div className="flex items-center gap-2 shrink-0">
-                            <div className="size-8 text-primary">
-                                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                            <h1 className="font-display text-2xl font-bold tracking-tight text-gray-900 dark:text-white">IMPROTRU</h1>
-                        </div>
-                        {/* Search Bar */}
-                        <div className="hidden md:flex flex-1 max-w-2xl">
-                            <div className="relative w-full group">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                    <span className="material-symbols-outlined text-gray-400">search</span>
-                                </div>
-                                <input className="block w-full pl-10 pr-3 py-2.5 border-none rounded-lg leading-5 bg-[#f3e7e9] dark:bg-[#3a2225] text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white dark:focus:bg-[#2d1b1e] transition-all duration-200 sm:text-sm" placeholder="Search for laptops, monitors, accessories..." type="text" />
-                            </div>
-                        </div>
-                        {/* Icons / Actions */}
-                        <div className="flex items-center gap-4">
-                            <button className="md:hidden p-2 text-gray-500 hover:text-primary transition-colors">
-                                <span className="material-symbols-outlined">search</span>
-                            </button>
-                            <a className="hidden sm:flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">
-                                <span className="material-symbols-outlined">person</span>
-                                <span className="text-[10px] font-bold uppercase mt-0.5">Account</span>
-                            </a>
-                            <a className="relative flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary transition-colors group" href="#">
-                                <div className="relative">
-                                    <span className="material-symbols-outlined group-hover:animate-bounce">shopping_cart</span>
-                                    <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center border-2 border-white dark:border-[#2d1b1e]">2</span>
-                                </div>
-                                <span className="text-[10px] font-bold uppercase mt-0.5">Cart</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <Navbar type="store" />
 
             {/* Main Content */}
             <main className="flex-grow">
