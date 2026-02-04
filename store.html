@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IMPROTRU Retail</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e91c37",
+                        "background-light": "#fcf8f9",
+                        "background-dark": "#211113",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2d1b1e",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-[#1b0e0f] dark:text-[#fcf8f9] min-h-screen flex flex-col">
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="px-4 md:px-10 py-4 max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="size-8 text-primary">
+                    <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h1 class="text-text-main dark:text-white text-xl font-bold tracking-tight">IMPROTRU <span
+                        class="text-text-secondary font-normal">Retail</span></h1>
+            </div>
+            <div class="hidden lg:flex flex-1 justify-center max-w-2xl px-8">
+                <div class="relative w-full group">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <span class="material-symbols-outlined text-gray-400">search</span>
+                    </div>
+                    <input
+                        class="block w-full pl-10 pr-3 py-2 border border-gray-200 dark:border-gray-700 rounded-full leading-5 bg-gray-50 dark:bg-[#2d1b1e] text-text-main dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white dark:focus:bg-[#2d1b1e] transition-all duration-200 sm:text-sm"
+                        placeholder="Search for laptops, monitors, accessories..." type="text">
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-6">
+                <div class="flex items-center gap-4 text-text-main dark:text-gray-300">
+                    <a class="flex flex-col items-center justify-center hover:text-primary transition-colors" href="#">
+                        <span class="material-symbols-outlined">person</span>
+                        <span class="text-[10px] font-bold uppercase mt-0.5">Account</span>
+                    </a>
+                    <a class="relative flex flex-col items-center justify-center hover:text-primary transition-colors group"
+                        href="#">
+                        <div class="relative">
+                            <span class="material-symbols-outlined group-hover:animate-bounce">shopping_cart</span>
+                            <span
+                                class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center border-2 border-white dark:border-[#2d1b1e]">2</span>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase mt-0.5">Cart</span>
+                    </a>
+                </div>
+                <div class="h-6 w-px bg-gray-300 dark:bg-gray-700"></div>
+                <a href="home.html"
+                    class="flex items-center gap-2 rounded-full h-10 pl-4 pr-5 bg-[#ED1A37] text-white text-sm font-bold hover:bg-[#d61731] transition-all shadow-md">
+                    <span class="material-symbols-outlined text-lg">domain</span>
+                    <span class="tracking-wide">Enterprise</span>
+                </a>
+            </div>
+            <button class="lg:hidden text-text-main dark:text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="relative rounded-2xl overflow-hidden bg-gray-900 group">
+                <!-- Background Image -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    data-alt="Modern gaming laptop setup with RGB lighting in a dark room"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBap6GbO4B8bAiNhOEJt0UmuNkOWOelJsdSXeZCKUkdU3JJrRebJXY7KNVim_Wqr8zb8GnKIj3RRde6gcKI_sTbGd5hCaZVpm1ykkikVt-PPXgGWbJ93p2zR8H_g2rMSZv1GhT1HS43nqFneR7AlcANFP-nwCYI5e8jxrWSE0iFq_coSvryT1A5jvebI9brsZOru4o4pfjqt-WCRrQ3OvBo35lgL2pgvYWk02jye9Fi7Tot8IKkOQFyBmPSxObJwPmPOvRriRERLRCI');">
+                </div>
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                <!-- Content -->
+                <div class="relative h-[480px] md:h-[560px] flex flex-col justify-center px-8 md:px-16 max-w-2xl">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider w-fit mb-4 backdrop-blur-sm">New
+                        Arrivals</span>
+                    <h1
+                        class="font-display text-4xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tight">
+                        Level Up <br />Your Setup
+                    </h1>
+                    <p class="text-gray-200 text-lg md:text-xl mb-8 font-light max-w-md">
+                        Experience the raw power of the latest RTX 40-Series. Unmatched performance for gaming and
+                        creation.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-primary hover:bg-red-600 text-white font-bold py-3.5 px-8 rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-primary/30 flex items-center gap-2">
+                            Shop Gaming
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                        <button
+                            class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold py-3.5 px-8 rounded-lg transition-all flex items-center gap-2">
+                            View Specs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Category Pills -->
+        <section class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h2 class="font-display text-2xl font-bold mb-6 dark:text-white">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Card 1 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">laptop_chromebook</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Laptops</span>
+                </a>
+                <!-- Card 2 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">desktop_windows</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Desktops</span>
+                </a>
+                <!-- Card 3 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">monitor</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Monitors</span>
+                </a>
+                <!-- Card 4 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">headphones</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Audio</span>
+                </a>
+                <!-- Card 5 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">keyboard</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Peripherals</span>
+                </a>
+                <!-- Card 6 -->
+                <a class="flex flex-col items-center p-4 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:border-primary/30 transition-all group"
+                    href="#">
+                    <div
+                        class="size-12 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">memory</span>
+                    </div>
+                    <span class="font-medium text-sm dark:text-gray-200">Components</span>
+                </a>
+            </div>
+        </section>
+        <!-- Featured Products -->
+        <section class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="font-display text-2xl font-bold dark:text-white">Featured Products</h2>
+                <a class="text-primary font-medium hover:text-red-700 flex items-center text-sm" href="#">
+                    View All <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div
+                    class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-all group flex flex-col h-full">
+                    <div class="relative aspect-[4/3] bg-gray-50 dark:bg-gray-800 overflow-hidden">
+                        <span
+                            class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider z-10">Sale</span>
+                        <img alt="Silver laptop open on a white desk"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Silver laptop open on a white desk"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4rt5Tt3d-jOsZ_cTesqNAIlSkzuJtjZGC73XZ4e2PQ1UIuFrarzh84IMcNx0JIt-AyGK48l9ekBBWV660S6dssMAMqmvJKsNgSsQKBtZWoiO79KooiXMyHlTIialIOhVLutk-rWOmUcyGPqlcVxQxV3bydCDbT4bt4Q4YyXnyijMjFNTi2bdQkwUkHePIsjfKg2wBXAL6M5VQGfTI5Yc2251iaAwcpoMboEesca3e4tAAwAeEn70ZyEc2gd_-crE7rd7SqtDTbQP" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                        </button>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <div class="text-xs text-gray-500 mb-1">Laptops</div>
+                        <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-1">UltraSlim Pro 15
+                        </h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">The thinnest
+                            high-performance laptop in its class with M2 chip.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-xs text-gray-400 line-through">$1,299</span>
+                                <span class="font-bold text-xl text-primary">$999</span>
+                            </div>
+                            <div class="flex text-yellow-400 text-xs">
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star_half</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div
+                    class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-all group flex flex-col h-full">
+                    <div class="relative aspect-[4/3] bg-gray-50 dark:bg-gray-800 overflow-hidden">
+                        <img alt="Mechanical keyboard with RGB lighting"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Mechanical keyboard with RGB lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoKHoa0LPTRCkvk2tkBHA0WZsi6L8apNFFgSlP0MKrW6tcbSBqWYBQX8B13oquPnFJprfTlHziF0orGD1AEEZMO5FyLUPAObPaGQxB8vvVLhRyQIgcFe70BuN4AnW5Yo3msKZY2YOHh4cft7xgaycFUNv8hmeXf70oHvGtWcjK-PSQNn5YrRoosaYyxphzs3VVTVT6U5XvazEXlXs5YmLdPhZ7SCIROtWh0Cdb_dYYJQTX5lre_cq0LXaLLySyLze_lH0JqRvWEDpW" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                        </button>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <div class="text-xs text-gray-500 mb-1">Peripherals</div>
+                        <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-1">MechKey RGB</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">Customizable mechanical
+                            switches with per-key RGB lighting.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-xl text-gray-900 dark:text-white">$129</span>
+                            </div>
+                            <div class="flex text-yellow-400 text-xs">
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px]">star</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div
+                    class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-all group flex flex-col h-full">
+                    <div class="relative aspect-[4/3] bg-gray-50 dark:bg-gray-800 overflow-hidden">
+                        <img alt="Over ear headphones on yellow background"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Over ear headphones product shot"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0czJA-SCPIY-yZZwFZqee1E2susebwummxRF5cpjoacUbtJsPRWiDQ7hQ4iTXM1LfETPcK8yFwan70i4BY8JqEaW4VvDq5k2y7I5TVNPZes6ZJ4KvZeYtA73I2KVeDjS2PNpI5F9FVLnbWwuBWdZZziLmHaHmKn2MG2KN2H4SiOEau4dkRwhZJqin6LddOQWjPcv-m86S__oxih54Jh1-tbPIMYWHMhmawYVJEqggoJkE_ZT6oKPwtphQ8Jul_Lz25Cv48OatSm4H" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                        </button>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <div class="text-xs text-gray-500 mb-1">Audio</div>
+                        <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-1">SonicBass Pro</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">Wireless noise cancelling
+                            headphones with 30h battery life.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-xl text-gray-900 dark:text-white">$249</span>
+                            </div>
+                            <div class="flex text-yellow-400 text-xs">
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div
+                    class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-all group flex flex-col h-full">
+                    <div class="relative aspect-[4/3] bg-gray-50 dark:bg-gray-800 overflow-hidden">
+                        <span
+                            class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider z-10">New</span>
+                        <img alt="Modern computer monitor on desk"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                            data-alt="4k Monitor setup on a wooden desk"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Q30SGa3xN6wuMDjGqPI1jMjD79gf8NSPdBjyQT-StiFpTLHJvoEXloYxl0vTr1gzR8ciwHQJOTfPjtirnUyOWDND1OVTxRiF292jcpkrcUou4nnwRdwtYEdNldyr6rVSPWnET5OVVDQQxjDKXk1NKO4wOkHwIB2mQywVmCIEzjtEmZpTkfP9x-pvWYTKhyNpBO3Li8wBwzsUDoG65wfMJ7bi_1kbsdg4gRBqlfe1CU2qtwOXw8tpkGlux8xtwduX_6I2YMKQ67uK" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                        </button>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <div class="text-xs text-gray-500 mb-1">Monitors</div>
+                        <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-1">Vision 4K Ultra
+                        </h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">27-inch IPS panel with
+                            144Hz refresh rate for creators.</p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-xl text-gray-900 dark:text-white">$350</span>
+                            </div>
+                            <div class="flex text-yellow-400 text-xs">
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px] filled">star</span>
+                                <span class="material-symbols-outlined text-[16px]">star_half</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Promo Banner -->
+        <section class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div
+                class="rounded-2xl bg-primary text-white p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl shadow-red-200 dark:shadow-none">
+                <!-- Abstract Pattern BG -->
+                <div
+                    class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none transform skew-x-12 translate-x-12 bg-white">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-1/3 h-full opacity-10 pointer-events-none transform -skew-x-12 -translate-x-12 bg-black">
+                </div>
+                <div class="relative z-10 max-w-xl text-center md:text-left">
+                    <span
+                        class="inline-block py-1 px-3 rounded bg-white/20 backdrop-blur-sm text-xs font-bold uppercase tracking-wider mb-4">Limited
+                        Time Offer</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Student &amp; Teacher Discount</h2>
+                    <p class="text-white/90 text-lg mb-6">Get up to 15% off on select laptops and tablets. Verified
+                        academic status required.</p>
+                    <button
+                        class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-lg shadow-lg transition-colors">
+                        Learn More
+                    </button>
+                </div>
+                <div class="relative z-10 hidden md:block">
+                    <span class="material-symbols-outlined text-[120px] text-white/20 rotate-12">school</span>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Signals -->
+        <section class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-surface-dark mt-auto">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-full text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">local_shipping</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 dark:text-white">Free Shipping</h3>
+                        <p class="text-gray-500 text-sm max-w-xs">On all orders over $50 within the continental US.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-full text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">verified_user</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 dark:text-white">2-Year Warranty</h3>
+                        <p class="text-gray-500 text-sm max-w-xs">Standard warranty on all hardware purchases.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-full text-primary mb-4">
+                            <span class="material-symbols-outlined text-[32px]">support_agent</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 dark:text-white">24/7 Expert Support</h3>
+                        <p class="text-gray-500 text-sm max-w-xs">Get help from our tech experts anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f3e7e9] dark:bg-[#1a0d0f] pt-16 pb-8 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="font-display font-bold text-xl dark:text-white">IMPROTRU</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                        Empowering your digital life with premium hardware and solutions. From gaming rigs to office
+                        essentials.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">public</span></a>
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">alternate_email</span></a>
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">rss_feed</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-gray-900 dark:text-white mb-6">Shop</h4>
+                    <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Laptops</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Desktops</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Monitors</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Components</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-gray-900 dark:text-white mb-6">Support</h4>
+                    <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Order Status</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Warranty</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Store Locator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-gray-900 dark:text-white mb-6">Newsletter</h4>
+                    <p class="text-sm text-gray-500 mb-4">Subscribe to get special offers, free giveaways, and
+                        once-in-a-lifetime deals.</p>
+                    <form class="flex flex-col gap-2">
+                        <input
+                            class="w-full px-4 py-2 rounded-lg bg-white dark:bg-[#2d1b1e] border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary text-sm"
+                            placeholder="Enter your email" type="email" />
+                        <button
+                            class="w-full bg-primary hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm"
+                            type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-300 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+                <p>© 2024 IMPROTRU Inc. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Privacy Policy</a>
+                    <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Terms of Service</a>
+                    <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
