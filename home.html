@@ -151,9 +151,57 @@
               </a>
             </div>
           </div>
-          <button class="lg:hidden text-text-main dark:text-white">
-            <span class="material-symbols-outlined">menu</span>
-          </button>
+          <label class="lg:hidden text-text-main dark:text-white cursor-pointer select-none" for="mobile-menu-toggle">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </label>
+        </div>
+        <div
+          class="fixed inset-0 z-[60] bg-white dark:bg-background-dark translate-x-full opacity-0 pointer-events-none transition-all duration-300 lg:hidden"
+          id="mobile-menu"
+        >
+          <div class="flex flex-col h-full p-6">
+            <div class="flex items-center justify-between mb-12">
+              <div class="flex items-center gap-3">
+                <div class="size-8 text-primary">
+                  <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <span class="text-text-main dark:text-white text-xl font-bold">IMPROTRU</span>
+              </div>
+              <label class="text-text-main dark:text-white cursor-pointer" for="mobile-menu-toggle">
+                <span class="material-symbols-outlined text-3xl">close</span>
+              </label>
+            </div>
+            <nav class="flex flex-col gap-8 mb-auto">
+              <a class="text-2xl font-bold text-text-main dark:text-white hover:text-primary transition-colors" href="#">Home</a>
+              <a class="text-2xl font-bold text-text-main dark:text-white hover:text-primary transition-colors" href="#solutions">Solutions</a>
+              <a class="text-2xl font-bold text-text-main dark:text-white hover:text-primary transition-colors" href="#contact">Contact</a>
+            </nav>
+            <div class="pt-8 border-t border-gray-200 dark:border-gray-800 space-y-6">
+              <div class="flex flex-col gap-4">
+                <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Select Language</span>
+                <div class="flex gap-4">
+                  <button
+                    class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-800 text-sm font-bold text-text-main dark:text-white bg-gray-50 dark:bg-white/5"
+                  >
+                    🇺🇸 EN
+                  </button>
+                  <button
+                    class="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-800 text-sm font-bold text-text-main dark:text-white"
+                  >
+                    🇪🇸 ES
+                  </button>
+                </div>
+              </div>
+              <button
+                class="w-full flex items-center justify-center gap-3 rounded-xl h-14 bg-[#ED1A37] text-white text-lg font-bold shadow-lg shadow-red-500/20 active:scale-95 transition-all"
+              >
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span>Switch to Store</span>
+              </button>
+            </div>
+          </div>
         </div>
       </header>
       <main class="flex-grow relative group">
