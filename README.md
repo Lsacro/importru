@@ -19,10 +19,10 @@ escalabilidad y alta disponibilidad.
 
 ## 🛠️ Nuestras Líneas de Solución
 
-### 🏢 Soluciones de Data Center y Hardware
+### 🏢 Soluciones de Infraestructura TI para Data Centers
 
 - Diseño y modernización de infraestructura TI on-premise e híbrida.
-- Suministro y distribución de hardware de alto rendimiento junto a aliados estratégicos como **Lenovo**, **Dell Technologies** y **HPE**.
+- Suministro y distribución de hardware de alto rendimiento junto a aliados estratégicos como **Lenovo**, **Dell Technolo*, **IBM* y **HPE**.
 
 ### ☁️ Virtualización, Nube y Continuidad de Negocio
 
@@ -39,7 +39,7 @@ escalabilidad y alta disponibilidad.
 
 Trabajamos de la mano con líderes mundiales en tecnología para garantizar soluciones robustas:
 
-- **Hardware / Servidores:** Lenovo, Dell Technologies, HPE
+- **Hardware / Servidores / Almacenamiento:** Lenovo, Dell Technologies, HPE, IBM
 - **Software & Cloud:** Microsoft Azure, Broadcom, RedHat
 - **Protección de Datos:** Veeam
 
@@ -63,5 +63,5 @@ Si formas parte del equipo de ingeniería o soporte TI de ImporTru, este reposit
 El equipo técnico ofrece soporte experto 24/7 para infraestructuras bajo contrato de mantenimiento.
 
 - **Sitio Web:** [importru.com](https://importru.com/ 'IMPROTRU Corporate Enhanced Infrastructure v2')
-- **Contacto Comercial / Técnico:** `importru.ec@gmail.com`
-- **Ubicación:** Quito, Ecuador
+- **Contacto Comercial / Técnico:** `contacto@importru.com`
+- **Ubicación:** Av. Eloy Alfaro n34-118 y Catalina Aldaz, edif. Maldonado Correa oficina 2000, Quito-Ecuador
