@@ -1,0 +1,150 @@
+{
+  "title": "Elegir el universo visual para la web corporativa de ImporTru",
+  "question": "La tirada asignó 'Estación de Enlace Backbone & Fibra Transoceánica'. Elige mantenerla, tomar una alternativa o relanzar.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Estación de Enlace Backbone & Fibra",
+      "kicker": "THE ROLL",
+      "lineage": "Centros de aterrizaje de cable submarino y enlaces de fibra de alta redundancia",
+      "thesis": "Infraestructura crítica mostrada como arterias físicas de interconexión continental, donde cada rack, servidor y nube se traza con rigor de ingeniería.",
+      "palette": [
+        "#070b14",
+        "#1e40af",
+        "#d97706",
+        "#f9fafb"
+      ],
+      "materials": [
+        "cobre de blindaje",
+        "aluminio anodizado oscuro",
+        "fibra monomodo"
+      ],
+      "viewport": "Un visor de arquitectura de red e infraestructura Tier-1 donde la capacidad de cómputo, almacenamiento y nube híbrida se visualizan en topologías físicas activas con métricas de uptime en tiempo real.",
+      "risk": "Puede sentirse excesivamente frío o abstracto si la oferta multimarca y el formulario de cotización directa no están anclados con claridad inmediata.",
+      "raised": [
+        {
+          "from": "architecture-inhabitable-space-versailles-bosquet-vistas",
+          "raise": "Composición axial monumental: la jerarquía visual organiza la infraestructura en ejes de navegación nítidos y sin ruido."
+        },
+        {
+          "from": "signals-instruments-nixie-laboratory-counter",
+          "raise": "Métricas con densidad y relieve físico de hardware: indicadores de uptime 99% y SLAs con presencia tangible de ingeniería enterprise."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "NOC Telemetría de Alta Disponibilidad",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Salas de control NOC de telecomunicaciones y centros de datos de misión crítica",
+      "thesis": "La columna vertebral de TI convertida en un tablero de control técnico sobrio, donde el dimensionamiento de hardware, servidores y nubes se presenta con precisión quirúrgica.",
+      "palette": [
+        "#0a0f1d",
+        "#0284c7",
+        "#10b981",
+        "#e2e8f0"
+      ],
+      "materials": [
+        "acero laminado",
+        "vidrio de sala de control",
+        "indicadores de estado LED"
+      ],
+      "viewport": "Un esquema interactivo de arquitectura híbrida (on-premise Lenovo/Dell/HPE/IBM + Azure/RedHat + Veeam) con accesos directos para dimensionar requerimientos y solicitar cotizaciones.",
+      "risk": "Familiar en el sector de redes; el visitante habitual de TI lo reconoce al instante, pero debe evitar lucir como un dashboard puramente interno.",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "challenger-versailles",
+      "kind": "challenger",
+      "catalogId": "architecture-inhabitable-space-versailles-bosquet-vistas",
+      "label": "Perspectiva Axial de Versalles",
+      "verdict": "declined",
+      "lineage": "Jardines y ejes paisajísticos monumentales",
+      "palette": [
+        "#1c2826",
+        "#e0d68a",
+        "#f4f1de"
+      ],
+      "materials": [
+        "piedra caliza",
+        "bronce pulido"
+      ],
+      "case": "Pierde en audiencia: un entorno palaciego no conecta con la compra de servidores y nube corporativa.",
+      "kept": "Composición axial monumental que estructura la navegación.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-versailles-bosquet-vistas-hero.webp"
+    },
+    {
+      "id": "challenger-nixie",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Contador de Tubos Nixie",
+      "verdict": "declined",
+      "lineage": "Instrumentación científica de laboratorio",
+      "palette": [
+        "#0f172a",
+        "#f97316",
+        "#94a3b8"
+      ],
+      "materials": [
+        "vidrio soplado",
+        "chasis de acero"
+      ],
+      "case": "Pierde en actualidad: el look retro-analógico desentona con cloud moderna y ciber-resiliencia.",
+      "kept": "Presencia física y relieve en los indicadores numéricos de telemetría.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+    },
+    {
+      "id": "challenger-anime-command",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-anime-command-center",
+      "label": "Muro de Mando Táctico",
+      "verdict": "declined",
+      "lineage": "Muros de crisis y telemetría de ficción",
+      "palette": [
+        "#050505",
+        "#ff6b00",
+        "#00ff66"
+      ],
+      "materials": [
+        "fósforo ámbar",
+        "señalética industrial"
+      ],
+      "case": "Pierde en tono corporativo: la estética anime de crisis resulta informal para licitaciones empresariales.",
+      "kept": "Contraste absoluto y jerarquía visual de métricas de alta prioridad.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-anime-command-center-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "El Estándar B2B Corporativo",
+    "thesis": "El diseño corporativo enterprise tradicional: fondo blanco pulido, rejilla sobria, módulos limpios y logotipos de partners ordenados.",
+    "palette": [
+      "#ffffff",
+      "#0f172a",
+      "#2563eb"
+    ],
+    "materials": [
+      "rejilla blanca corporativa",
+      "fotografía de hardware de stock"
+    ],
+    "viewport": "Hero clásico con titular corporativo de alto impacto, propuesta de valor, badges de partners (Lenovo, Dell, Microsoft, Veeam) y botón de contacto destacado.",
+    "risk": "Indistinguible a primera vista de cualquier integrador tradicional de tecnología.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}
+

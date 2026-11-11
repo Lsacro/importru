@@ -1,0 +1,47 @@
+{
+  "regions": [
+    {
+      "id": "nav-bar",
+      "kind": "chrome",
+      "grid": "A0:J0",
+      "note": "top navigation bar with logo, menu links, and quote button"
+    },
+    {
+      "id": "hero-headline",
+      "kind": "text",
+      "grid": "A1:E3",
+      "note": "monumental technical headline Infraestructura TI de Misión Crítica"
+    },
+    {
+      "id": "hero-subhead",
+      "kind": "text",
+      "grid": "A4:E4",
+      "note": "subheading describing enterprise compute hardware and cloud architecture"
+    },
+    {
+      "id": "metric-kpis",
+      "kind": "control",
+      "grid": "A5:E5",
+      "note": "KPI metric badges with uptime guarantee and corporate client counts"
+    },
+    {
+      "id": "hero-ctas",
+      "kind": "control",
+      "grid": "A6:E6",
+      "note": "dual call to action buttons Dimensionar Proyecto and Hablar con un Especialista"
+    },
+    {
+      "id": "server-rack-plate",
+      "kind": "plate",
+      "grid": "F1:J7",
+      "note": "3D enterprise server rack chassis with optical bus lines and HUD telemetry"
+    },
+    {
+      "id": "partners-banner",
+      "kind": "chrome",
+      "grid": "A8:J9",
+      "note": "enterprise partner logos trust bar Lenovo Dell HPE IBM Azure Veeam"
+    }
+  ]
+}
+

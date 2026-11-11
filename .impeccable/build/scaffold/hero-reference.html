@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scaffold reference: comp-1.png</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap">
+  <link rel="stylesheet" href="layout.css">
+  <style>html,body{margin:0}body{background:#1a1919}.region{box-sizing:border-box}.region.text p{white-space:pre-wrap}</style>
+</head>
+<body>
+<!-- Reference only. Every region sits at its measured box inside a comp-aspect frame. Take the boxes (layout.css), keep your own semantic structure. -->
+<main class="comp-frame" style="max-width:1376px">
+  <div class="r-nav-bar region chrome" data-region="nav-bar"><!-- top navigation bar with logo, menu links, and quote button --></div>
+  <div class="r-hero-headline region text" data-region="hero-headline"><!-- monumental technical headline Infraestructura TI de Misión Crítica --><p style="font-size:var(--r-hero-headline-font);font-family:var(--r-hero-headline-family),sans-serif;font-weight:var(--r-hero-headline-weight);line-height:1.05;margin:0">hero-headline</p></div>
+  <div class="r-hero-subhead region text" data-region="hero-subhead"><!-- subheading describing enterprise compute hardware and cloud architecture --><p style="font-size:var(--r-hero-subhead-font);line-height:1.05;margin:0">hero-subhead</p></div>
+  <div class="r-metric-kpis region control" data-region="metric-kpis"><!-- KPI metric badges with uptime guarantee and corporate client counts: match the control's lettering and visible shape to the crop (comp-spec.mjs --crop metric-kpis); a control need not have button chrome --></div>
+  <div class="r-hero-ctas region control" data-region="hero-ctas"><!-- dual call to action buttons Dimensionar Proyecto and Hablar con un Especialista: match the control's lettering and visible shape to the crop (comp-spec.mjs --crop hero-ctas); a control need not have button chrome --></div>
+  <figure class="r-server-rack-plate region plate" data-region="server-rack-plate"><img src="../../../assets/plates/server-rack-plate.png" alt="" style="width:100%;height:100%;object-fit:contain;object-position:top left"></figure>
+  <div class="r-partners-banner region chrome" data-region="partners-banner"><!-- enterprise partner logos trust bar Lenovo Dell HPE IBM Azure Veeam --></div>
+</main>
+</body>
+</html>

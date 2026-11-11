@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "stage": "hero",
+  "id": "hero",
+  "title": "First viewport",
+  "comp": {
+    "path": ".impeccable/mocks/comp-1.png",
+    "width": 1376,
+    "height": 768
+  },
+  "components": [
+    {
+      "id": "first-viewport",
+      "name": "First viewport",
+      "medium": "HTML / CSS",
+      "note": "Assembled first viewport for ImporTru",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "preview": {
+        "kind": "page",
+        "path": "dist/index.html"
+      },
+      "dependencies": [
+        "assets/index-B9CG_8br.js",
+        "assets/index-C8iVOmaG.css",
+        "assets/plates/server-rack-plate.png",
+        "fonts/averia-sans-libre-700.woff2"
+      ]
+    }
+  ]
+}

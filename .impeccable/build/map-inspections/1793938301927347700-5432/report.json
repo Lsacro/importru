@@ -1,0 +1,458 @@
+{
+  "tool": "comp-spec inspect-map",
+  "version": 1,
+  "referenceOnly": true,
+  "stateChanged": false,
+  "comp": ".impeccable/mocks/comp-1.png",
+  "compSize": {
+    "width": 1376,
+    "height": 768
+  },
+  "inputRegionCount": 7,
+  "regions": [
+    {
+      "id": "nav-bar",
+      "kind": "chrome",
+      "note": "top navigation bar with logo, menu links, and quote button",
+      "grid": "A0:J0",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1376,
+        "h": 77
+      },
+      "aspect": 17.8701,
+      "palette": [
+        {
+          "hex": "#181919",
+          "coverage": 0.8937
+        },
+        {
+          "hex": "#e21a38",
+          "coverage": 0.0582
+        },
+        {
+          "hex": "#32373b",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#f3f3f3",
+          "coverage": 0.0114
+        },
+        {
+          "hex": "#c1c1c1",
+          "coverage": 0.0079
+        }
+      ],
+      "detail": {
+        "energy": 22.2626
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 1,
+      "cropPath": "region-1.png"
+    },
+    {
+      "id": "hero-headline",
+      "kind": "text",
+      "note": "monumental technical headline Infraestructura TI de Misión Crítica",
+      "grid": "A1:E3",
+      "coverBox": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.3
+      },
+      "box": {
+        "x": 0.0654,
+        "y": 0.2174,
+        "w": 0.4346,
+        "h": 0.1823
+      },
+      "px": {
+        "x": 90,
+        "y": 167,
+        "w": 598,
+        "h": 140
+      },
+      "aspect": 4.2714,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.7701
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.1942
+        },
+        {
+          "hex": "#9e9e9e",
+          "coverage": 0.0175
+        },
+        {
+          "hex": "#505051",
+          "coverage": 0.0151
+        },
+        {
+          "hex": "#c8c8c8",
+          "coverage": 0.0031
+        }
+      ],
+      "detail": {
+        "energy": 80.0493
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 2,
+      "cropPath": "region-2.png"
+    },
+    {
+      "id": "hero-subhead",
+      "kind": "text",
+      "note": "subheading describing enterprise compute hardware and cloud architecture",
+      "grid": "A4:E4",
+      "coverBox": {
+        "x": 0,
+        "y": 0.4,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0654,
+        "y": 0.3997,
+        "w": 0.4346,
+        "h": 0.1003
+      },
+      "px": {
+        "x": 90,
+        "y": 307,
+        "w": 598,
+        "h": 77
+      },
+      "aspect": 7.7662,
+      "palette": [
+        {
+          "hex": "#171718",
+          "coverage": 0.7367
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.1725
+        },
+        {
+          "hex": "#4f5050",
+          "coverage": 0.0374
+        },
+        {
+          "hex": "#c3c4c4",
+          "coverage": 0.0339
+        },
+        {
+          "hex": "#9f9fa0",
+          "coverage": 0.0195
+        }
+      ],
+      "detail": {
+        "energy": 79.8923
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 3,
+      "cropPath": "region-3.png"
+    },
+    {
+      "id": "metric-kpis",
+      "kind": "control",
+      "note": "KPI metric badges with uptime guarantee and corporate client counts",
+      "grid": "A5:E5",
+      "coverBox": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0654,
+        "y": 0.5,
+        "w": 0.3663,
+        "h": 0.0469
+      },
+      "px": {
+        "x": 90,
+        "y": 384,
+        "w": 504,
+        "h": 36
+      },
+      "aspect": 14,
+      "palette": [
+        {
+          "hex": "#171718",
+          "coverage": 0.8697
+        },
+        {
+          "hex": "#444545",
+          "coverage": 0.0504
+        },
+        {
+          "hex": "#b8b9bb",
+          "coverage": 0.0429
+        },
+        {
+          "hex": "#808082",
+          "coverage": 0.0339
+        },
+        {
+          "hex": "#303040",
+          "coverage": 0.003
+        }
+      ],
+      "detail": {
+        "energy": 42.2436
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 4,
+      "cropPath": "region-4.png"
+    },
+    {
+      "id": "hero-ctas",
+      "kind": "control",
+      "note": "dual call to action buttons Dimensionar Proyecto and Hablar con un Especialista",
+      "grid": "A6:E6",
+      "box": {
+        "x": 0,
+        "y": 0.6,
+        "w": 0.5,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 461,
+        "w": 688,
+        "h": 77
+      },
+      "aspect": 8.9351,
+      "palette": [
+        {
+          "hex": "#222121",
+          "coverage": 0.9266
+        },
+        {
+          "hex": "#351920",
+          "coverage": 0.0233
+        },
+        {
+          "hex": "#ce283c",
+          "coverage": 0.0193
+        },
+        {
+          "hex": "#ebebec",
+          "coverage": 0.0173
+        },
+        {
+          "hex": "#b0afaf",
+          "coverage": 0.0134
+        }
+      ],
+      "detail": {
+        "energy": 17.4375
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 5,
+      "cropPath": "region-5.png"
+    },
+    {
+      "id": "server-rack-plate",
+      "kind": "plate",
+      "note": "3D enterprise server rack chassis with optical bus lines and HUD telemetry",
+      "grid": "F1:J7",
+      "box": {
+        "x": 0.5,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.7
+      },
+      "px": {
+        "x": 688,
+        "y": 77,
+        "w": 688,
+        "h": 538
+      },
+      "aspect": 1.2788,
+      "palette": [
+        {
+          "hex": "#1a181a",
+          "coverage": 0.6877
+        },
+        {
+          "hex": "#464547",
+          "coverage": 0.1157
+        },
+        {
+          "hex": "#3f1e20",
+          "coverage": 0.1029
+        },
+        {
+          "hex": "#888a8d",
+          "coverage": 0.0577
+        },
+        {
+          "hex": "#671c22",
+          "coverage": 0.0361
+        }
+      ],
+      "detail": {
+        "energy": 22.7822
+      },
+      "medium": "raster",
+      "plate": "assets/plates/server-rack-plate.png",
+      "text": null,
+      "number": 6,
+      "reference": {
+        "policy": "plate-reference-v2",
+        "excludedPixels": 688,
+        "totalPixels": 370144,
+        "remainingPixels": 369456,
+        "excludedFraction": 0.0018587360594795538,
+        "fullyExcluded": false,
+        "regions": [
+          {
+            "id": "partners-banner",
+            "kind": "chrome",
+            "cropPx": {
+              "x": 0,
+              "y": 537,
+              "w": 688,
+              "h": 1
+            },
+            "pixels": 688
+          }
+        ],
+        "ignoredContainers": []
+      },
+      "cropPath": "region-6.png",
+      "referencePath": "reference-6.png"
+    },
+    {
+      "id": "partners-banner",
+      "kind": "chrome",
+      "note": "enterprise partner logos trust bar Lenovo Dell HPE IBM Azure Veeam",
+      "grid": "A8:J9",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 1,
+        "h": 0.2
+      },
+      "px": {
+        "x": 0,
+        "y": 614,
+        "w": 1376,
+        "h": 154
+      },
+      "aspect": 8.9351,
+      "palette": [
+        {
+          "hex": "#191818",
+          "coverage": 0.9552
+        },
+        {
+          "hex": "#f4f4f4",
+          "coverage": 0.0252
+        },
+        {
+          "hex": "#3e3535",
+          "coverage": 0.0095
+        },
+        {
+          "hex": "#3a1a1a",
+          "coverage": 0.0056
+        },
+        {
+          "hex": "#878787",
+          "coverage": 0.0044
+        }
+      ],
+      "detail": {
+        "energy": 18.0755
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "number": 7,
+      "cropPath": "region-7.png"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "foreground-mask",
+      "regionId": "server-rack-plate",
+      "message": "partners-banner exclude 0.2% of this reference. Check that the excluded pixels contain foreground, not artwork between separate text elements. Split overly broad foreground bounds; review grouping must not change geometry."
+    },
+    {
+      "severity": "warning",
+      "code": "uncovered-ink",
+      "regionId": null,
+      "message": "3 grid cells have detail outside named regions. This is a coverage heuristic, not proof of missing components."
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "server-rack-plate",
+      "b": "partners-banner",
+      "pixels": 688.0,
+      "relationship": "overlapping elements"
+    }
+  ],
+  "reviewGroups": {},
+  "uncoveredInkCells": [
+    "B7",
+    "C7",
+    "D7"
+  ],
+  "comparisonSheets": [
+    {
+      "path": "comparison-1.png",
+      "regionIds": [
+        "server-rack-plate"
+      ]
+    }
+  ]
+}
