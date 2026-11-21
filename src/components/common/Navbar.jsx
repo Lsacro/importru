@@ -1,5 +1,6 @@
 import { useId, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const enlaces = [
   { texto: 'Home', href: '/' },
@@ -58,27 +59,8 @@ export default function Navbar({ tiendaUrl, inglesUrl }) {
 
   return (
     <header className='sticky top-0 z-50 w-full border-b border-white/20 bg-white/70 backdrop-blur-[10px] transition-all duration-300 dark:border-gray-800/50 dark:bg-background-dark/70'>
-      <div className='mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-3 px-4 md:px-10'>
-        <a
-          href='#'
-          onClick={cerrarMenu}
-          className='flex items-center gap-3 text-xl font-bold tracking-tight text-text-main dark:text-white'
-        >
-          <svg
-            aria-hidden='true'
-            className='size-8 shrink-0 text-primary'
-            viewBox='0 0 48 48'
-          >
-            <path d='M6 6H42L36 24L42 42H6L12 24L6 6Z' fill='currentColor' />
-          </svg>
-          <span>
-            IMPORTRU{' '}
-            <span className='hidden font-normal text-text-secondary opacity-80 sm:inline'>
-              Corporativo
-            </span>
-          </span>
-        </a>
-
+      <div className='mx-auto flex h-[72px] max-w-6xl items-center justify-between gap-3 px-4 md:px-10'>
+        <Logo />
         {/* Escritorio */}
         <div className='hidden items-center gap-6 lg:flex xl:gap-12'>
           <nav
@@ -123,7 +105,7 @@ export default function Navbar({ tiendaUrl, inglesUrl }) {
                     <span aria-hidden='true'>🇪🇸</span> Español
                   </span>
 
-                  {inglesUrl ? (
+                  {/* {inglesUrl ? (
                     <a
                       href={inglesUrl}
                       hrefLang='en'
@@ -135,12 +117,30 @@ export default function Navbar({ tiendaUrl, inglesUrl }) {
                     <span className='rounded px-3 py-2 text-sm text-text-secondary dark:text-gray-400'>
                       <span aria-hidden='true'>🇺🇸</span> Inglés
                     </span>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
 
-            <BotonTienda href={tiendaUrl} />
+            {/* <BotonTienda href={tiendaUrl} /> */}
+
+            <Link
+              to='/store'
+              className='group relative flex h-10 cursor-pointer items-center justify-center gap-2 rounded-full bg-primary pl-4 pr-5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:bg-[#d61731] active:scale-95'
+            >
+              {' '}
+              <span
+                aria-hidden='true'
+                className='pointer-events-none absolute inset-0 rounded-full bg-primary/20 opacity-0 blur-md transition-all group-hover:opacity-100 group-hover:blur-lg'
+              />
+              <span
+                aria-hidden='true'
+                className='material-symbols-outlined relative z-10 text-lg'
+              >
+                shopping_bag
+              </span>
+              <span className='relative z-10'>Ir a la tienda</span>
+            </Link>
           </div>
         </div>
 
@@ -170,14 +170,14 @@ export default function Navbar({ tiendaUrl, inglesUrl }) {
             className='absolute inset-x-0 top-full max-h-[calc(100dvh-73px)] overflow-y-auto border-b border-gray-200 bg-white px-4 py-3 shadow-lg dark:border-gray-800 dark:bg-background-dark'
           >
             {enlaces.map(({ texto, href }) => (
-              <a
+              <Link
                 key={texto}
-                href={href}
+                to={href}
                 onClick={cerrarMenu}
                 className='block rounded-lg px-4 py-3 text-sm font-semibold text-text-main hover:bg-gray-100 hover:text-primary dark:text-white dark:hover:bg-gray-800'
               >
                 {texto}
-              </a>
+              </Link>
             ))}
 
             {inglesUrl && (

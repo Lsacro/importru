@@ -8,6 +8,7 @@ import Solutions from './pages/Solutions';
 import Warranties from './pages/Warranties';
 import Partners from './pages/Partners';
 import Us from './pages/Us';
+import HomeStore from './pages/store/HomeStore';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/partners' element={<Partners />} />
           <Route path='/about' element={<Us />} />
         </Route>
+        <Route path='/store' element={<HomeStore />} />
       </Routes>
     </>
   );

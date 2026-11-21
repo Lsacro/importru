@@ -1518,226 +1518,163 @@ export default function Solutions() {
             }}
           ></div>
         </div>
-        <div className='relative z-10 max-w-7xl mx-auto px-4 md:px-10 py-24 md:py-32 flex flex-col justify-center min-h-[600px]'>
-          <div className='max-w-4xl'>
-            <div className='inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 border border-primary/30 text-white text-xs font-medium mb-8 backdrop-blur-md shadow-lg'>
-              <span className='material-symbols-outlined text-[16px]'>
-                layers
-              </span>
-              Infrastructure Solutions
+      </section>
+      <footer class='bg-[#1b0e0f] text-white pt-16 pb-24 md:pb-8' id='contact'>
+        <div class='max-w-7xl mx-auto px-4 md:px-10'>
+          <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 mb-12'>
+            <div class='flex flex-col gap-5 text-center md:text-left items-center md:items-start'>
+              <div class='flex items-center gap-2'>
+                <div class='size-6 text-primary'>
+                  <svg
+                    class='w-full h-full'
+                    fill='none'
+                    viewBox='0 0 48 48'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M6 6H42L36 24L42 42H6L12 24L6 6Z'
+                      fill='currentColor'
+                    ></path>
+                  </svg>
+                </div>
+                <span class='text-lg font-bold'>IMPROTRU Corp.</span>
+              </div>
+              <p class='text-gray-400 text-sm leading-relaxed max-w-sm'>
+                Delivering enterprise-grade IT infrastructure and hardware
+                solutions to businesses worldwide.
+              </p>
+              <div class='flex flex-col gap-2 pt-2 text-xs text-gray-400'>
+                <div class='flex items-center gap-2 justify-center md:justify-start'>
+                  <span class='material-symbols-outlined text-primary text-[18px]'>
+                    location_on
+                  </span>
+                  <span>Av. Eloy Alfaro n34-118, Quito</span>
+                </div>
+                <a
+                  class='flex items-center gap-2 hover:text-white transition-colors justify-center md:justify-start'
+                  href='tel:+593999951096'
+                >
+                  <span class='material-symbols-outlined text-primary text-[18px]'>
+                    call
+                  </span>
+                  <span>+593 999951096</span>
+                </a>
+                <a
+                  class='flex items-center gap-2 hover:text-white transition-colors justify-center md:justify-start'
+                  href='mailto:contact@importru.com'
+                >
+                  <span class='material-symbols-outlined text-primary text-[18px]'>
+                    mail
+                  </span>
+                  <span>contact@importru.com</span>
+                </a>
+              </div>
             </div>
-            <div className='relative h-[160px] md:h-[180px] lg:h-[200px] mb-6 drop-shadow-lg'>
-              <h1 className='text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight invisible'>
-                Enterprise IT Infrastructure <br />
-                Built for Scale
-              </h1>
-              <h1
-                className='absolute inset-0 text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight animate-fade-slide [text-shadow:_0_4px_12px_rgb(0_0_0_/_90%)]'
-                style={{ animationDelay: '0s' }}
-              >
-                Modernize Your <br />
-                IT Backbone
-              </h1>
-              <h1
-                className='absolute inset-0 text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight opacity-0 animate-fade-slide [text-shadow:_0_4px_12px_rgb(0_0_0_/_90%)]'
-                style={{ animationDelay: '3s' }}
-              >
-                Enterprise IT Infrastructure <br />
-                Built for Scale
-              </h1>
-              <h1
-                className='absolute inset-0 text-white text-4xl md:text-6xl font-bold leading-tight tracking-tight opacity-0 animate-fade-slide [text-shadow:_0_4px_12px_rgb(0_0_0_/_90%)]'
-                style={{ animationDelay: '6s' }}
-              >
-                Future-Proof Your <br />
-                Digital Strategy
-              </h1>
-            </div>
-            <p className='text-white text-lg md:text-xl font-medium leading-relaxed mb-10 max-w-2xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] [text-shadow:_0_1px_8px_rgb(0_0_0_/_80%)]'>
-              From high-performance data center hardware to resilient cloud
-              virtualization and impenetrable data protection. We engineer the
-              foundation for your enterprise growth.
-            </p>
-            <div className='flex gap-4'>
+            <div class='flex flex-col gap-3 text-center md:text-left items-center md:items-start'>
+              <h4 class='text-sm font-bold uppercase tracking-wider text-gray-500 mb-1'>
+                Solutions
+              </h4>
               <a
-                className='flex items-center justify-center h-12 px-8 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-black/40 hover:bg-red-600 transition-colors'
-                href='#solutions'
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#datacenter'
               >
-                Explore Solutions
+                Data Centers
               </a>
-              <button className='flex items-center justify-center h-12 px-8 rounded-lg border border-white/30 bg-black/40 backdrop-blur-md text-white text-sm font-bold hover:bg-black/60 transition-colors shadow-lg shadow-black/30'>
-                View Case Studies
-              </button>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#servers'
+              >
+                Enterprise Servers
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#licensing'
+              >
+                Enterprise Licensing
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#virtualization'
+              >
+                Cloud Services
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#protection'
+              >
+                Data Protection &amp; Cybersecurity
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#servicios'
+              >
+                Servicios TI
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#dimensionamiento'
+              >
+                Dimensionamiento TI
+              </a>
+            </div>
+            <div class='flex flex-col gap-3 text-center md:text-left items-center md:items-start'>
+              <h4 class='text-sm font-bold uppercase tracking-wider text-gray-500 mb-1'>
+                Company
+              </h4>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#'
+              >
+                About Us
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#'
+              >
+                Partners &amp; Alliances
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#'
+              >
+                Careers &amp; Culture
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#'
+              >
+                Press &amp; Insights
+              </a>
+              <a
+                class='text-gray-300 hover:text-primary transition-colors text-sm py-1 block'
+                href='#'
+              >
+                Case Studies
+              </a>
+            </div>
+          </div>
+          <div class='pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left'>
+            <p class='text-gray-500 text-sm'>
+              © 2023 IMPROTRU Corporate. All rights reserved.
+            </p>
+            <div class='flex items-center gap-4 text-sm text-gray-500'>
+              <a
+                class='text-gray-500 hover:text-white py-1 transition-colors'
+                href='#'
+              >
+                Privacy Policy
+              </a>
+              <span class='text-gray-700'>•</span>
+              <a
+                class='text-gray-500 hover:text-white py-1 transition-colors'
+                href='#'
+              >
+                Terms of Service
+              </a>
             </div>
           </div>
         </div>
-      </section>
-      <section className='bg-white dark:bg-[#1a0e10] border-b border-gray-200 dark:border-gray-800'>
-        <div className='max-w-7xl mx-auto px-4 md:px-10 py-8'>
-          <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x-0 lg:divide-x divide-gray-200 dark:divide-gray-800'>
-            <div className='flex flex-col items-center lg:items-start text-center lg:text-left'>
-              <span className='text-3xl md:text-4xl font-bold text-primary mb-1'>
-                +5
-              </span>
-              <span className='text-sm font-medium text-text-secondary dark:text-gray-400 uppercase tracking-wide'>
-                Years Experience
-              </span>
-            </div>
-            <div className='flex flex-col items-center lg:items-start lg:pl-8 text-center lg:text-left'>
-              <span className='text-3xl md:text-4xl font-bold text-primary mb-1'>
-                20+
-              </span>
-              <span className='text-sm font-medium text-text-secondary dark:text-gray-400 uppercase tracking-wide'>
-                Enterprise Clients
-              </span>
-            </div>
-            <div className='flex flex-col items-center lg:items-start lg:pl-8 text-center lg:text-left'>
-              <span className='text-3xl md:text-4xl font-bold text-primary mb-1'>
-                99%
-              </span>
-              <span className='text-sm font-medium text-text-secondary dark:text-gray-400 uppercase tracking-wide'>
-                Uptime Guarantee
-              </span>
-            </div>
-            <div className='flex flex-col items-center lg:items-start lg:pl-8 text-center lg:text-left'>
-              <span className='text-3xl md:text-4xl font-bold text-primary mb-1'>
-                24/7
-              </span>
-              <span className='text-sm font-medium text-text-secondary dark:text-gray-400 uppercase tracking-wide'>
-                Expert Support
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className='py-16 bg-white dark:bg-[#150a0b] border-t border-gray-100 dark:border-gray-800 overflow-hidden relative'>
-        <div className='max-w-7xl mx-auto px-4 md:px-10 mb-10 text-center relative z-10'>
-          <h3 className='text-sm font-bold uppercase tracking-widest text-text-secondary dark:text-gray-400 mb-2'>
-            Strategic Technology Partners
-          </h3>
-          <div className='h-0.5 w-12 bg-primary mx-auto'></div>
-        </div>
-        <div className='relative w-full mask-linear'>
-          <div className='flex w-max animate-scroll'>
-            <div className='flex gap-16 md:gap-24 items-center px-8 md:px-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500'>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <span className='material-symbols-outlined text-primary text-4xl'>
-                  star
-                </span>
-                RedHat
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <div className='h-8 w-8 rounded-full border-4 border-primary'></div>
-                BROADCOM
-              </div>
-              <div className='flex items-center gap-1 font-black text-2xl text-text-main dark:text-white tracking-tighter'>
-                <span className='text-primary'>V</span>EEAM
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <div className='flex gap-[2px] items-end h-6 pb-1'>
-                  <div className='w-1 h-2 bg-primary'></div>
-                  <div className='w-1 h-4 bg-primary'></div>
-                  <div className='w-1 h-2 bg-primary'></div>
-                  <div className='w-1 h-4 bg-primary'></div>
-                  <div className='w-1 h-2 bg-primary'></div>
-                </div>
-                CISCO
-              </div>
-              <div className='flex items-center gap-2 font-light text-2xl text-text-main dark:text-white'>
-                <span className='font-bold border-2 border-primary rounded-full w-8 h-8 flex items-center justify-center text-xs p-1'>
-                  DE
-                </span>
-                DELL
-                <span className='text-xs font-bold text-gray-500 -ml-1 mt-1'>
-                  Technologies
-                </span>
-              </div>
-              <div className='flex items-center gap-2 font-black text-2xl text-text-main dark:text-white tracking-widest'>
-                <div className='w-6 h-3 bg-primary'></div>
-                HPE
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <span className='material-symbols-outlined text-primary text-3xl'>
-                  change_history
-                </span>
-                Microsoft Azure
-              </div>
-            </div>
-            <div className='flex gap-16 md:gap-24 items-center px-8 md:px-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500'>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <span className='material-symbols-outlined text-primary text-4xl'>
-                  star
-                </span>
-                RedHat
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <div className='h-8 w-8 rounded-full border-4 border-primary'></div>
-                BROADCOM
-              </div>
-              <div className='flex items-center gap-1 font-black text-2xl text-text-main dark:text-white tracking-tighter'>
-                <span className='text-primary'>V</span>EEAM
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <div className='flex gap-[2px] items-end h-6 pb-1'>
-                  <div className='w-1 h-2 bg-primary'></div>
-                  <div className='w-1 h-4 bg-primary'></div>
-                  <div className='w-1 h-2 bg-primary'></div>
-                  <div className='w-1 h-4 bg-primary'></div>
-                  <div className='w-1 h-2 bg-primary'></div>
-                </div>
-                CISCO
-              </div>
-              <div className='flex items-center gap-2 font-light text-2xl text-text-main dark:text-white'>
-                <span className='font-bold border-2 border-primary rounded-full w-8 h-8 flex items-center justify-center text-xs p-1'>
-                  DE
-                </span>
-                DELL
-                <span className='text-xs font-bold text-gray-500 -ml-1 mt-1'>
-                  Technologies
-                </span>
-              </div>
-              <div className='flex items-center gap-2 font-black text-2xl text-text-main dark:text-white tracking-widest'>
-                <div className='w-6 h-3 bg-primary'></div>
-                HPE
-              </div>
-              <div className='flex items-center gap-2 font-bold text-2xl text-text-main dark:text-white'>
-                <span className='material-symbols-outlined text-primary text-3xl'>
-                  change_history
-                </span>
-                Microsoft Azure
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className='relative py-32 bg-white dark:bg-[#211113] overflow-hidden border-t border-gray-100 dark:border-gray-800'
-        style={{ backgroundColor: 'rgb(238, 238, 238)' }}
-      >
-        <div className='max-w-4xl mx-auto px-4 md:px-10 relative z-10 text-center'>
-          <h2 className='text-4xl md:text-5xl font-bold text-text-main dark:text-white mb-6 tracking-tight'>
-            Ready to work with us?
-          </h2>
-          <p className='text-lg text-text-secondary dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed'>
-            Experience the difference of enterprise-grade IT solutions. Whether
-            you're looking for infrastructure modernization, cloud strategy, or
-            professional support, our team is here to help you scale.
-          </p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
-            <a
-              href='https://wa.me/593999951096'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='flex items-center justify-center h-14 px-10 rounded-lg bg-[#ED1A37] text-white font-bold text-base hover:bg-red-600 transition-all shadow-lg hover:shadow-xl w-full sm:w-auto'
-            >
-              Contact Us
-            </a>
-            <button className='flex items-center justify-center h-14 px-10 rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-transparent text-text-main dark:text-white font-bold text-base hover:bg-gray-50 dark:hover:bg-white/5 transition-colors w-full sm:w-auto'>
-              View Careers
-            </button>
-          </div>
-        </div>
-      </section>
+      </footer>
     </main>
   );
 }
