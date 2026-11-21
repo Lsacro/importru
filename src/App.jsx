@@ -1,16 +1,27 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import './index.css';
+
+import Home from './pages/Home';
+import MainLayout from './layouts/MainLauout';
+import Solutions from './pages/Solutions';
+import Warranties from './pages/Warranties';
+import Partners from './pages/Partners';
+import Us from './pages/Us';
 
 function App() {
   return (
-    <div className='contenedor-pantalla-completa'>
-      <picture className='picture-completo'>
-        {/* Imagen para celulares (pantallas de 768px o menos) */}
-        <source media='(max-width: 768px)' srcSet='/Under_construction_mobil.jpg' />
-
-        {/* Imagen por defecto para PC y pantallas grandes */}
-        <img src='/Under_construction.jpg' alt='En construcción' className='imagen-completa' />
-      </picture>
-    </div>
+    <>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/solutions' element={<Solutions />} />
+          <Route path='/warranties' element={<Warranties />} />
+          <Route path='/partners' element={<Partners />} />
+          <Route path='/about' element={<Us />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
